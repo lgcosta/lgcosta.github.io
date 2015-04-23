@@ -13,7 +13,7 @@
 <link rel="canonical" href="/blog/2015/04/23/hangout-sobre-monitoramento-centreon/">
 
         <meta name="author" content="Luiz Gustavo Costa" />
-        <meta name="keywords" content="Monitoramento,Centreon,Nagios,Hangout" />
+        <meta name="keywords" content="Monitoramento,Centreon,Nagios,Icinga,Hangout" />
         <meta name="description" content="Olá amigos, neste novo Hangout estarei fazendo um apresentação sobre a ferramenta de monitoramento Centreon, junto com outros componentes que fazem parte do ambiente de monitoramento em rede. O Hangout acontecerá no dia 14 de maio/2015, às 20:00hrs Em duas horas de apresentação, abordaremos vários aspectos de funcionamento ..." />
 
         <meta property="og:site_name" content="Blog GugaBSD" />
@@ -26,6 +26,7 @@
             <meta property="article:tag" content="Monitoramento" />
             <meta property="article:tag" content="Centreon" />
             <meta property="article:tag" content="Nagios" />
+            <meta property="article:tag" content="Icinga" />
             <meta property="article:tag" content="Hangout" />
             <meta property="article:author" content="Luiz Gustavo Costa" />
 
@@ -116,6 +117,8 @@ Blog GugaBSD            </a>
         /
 	<a href="/tag/nagios.html">Nagios</a>
         /
+	<a href="/tag/icinga.html">Icinga</a>
+        /
 	<a href="/tag/hangout.html">Hangout</a>
     
 </footer><!-- /.post-info -->                    </div>
@@ -129,7 +132,7 @@ fazem parte do ambiente de monitoramento em rede.</p>
 </blockquote>
 <p>Em duas horas de apresentação, abordaremos vários aspectos de funcionamento
 do Centreon, acompanhados da instalação de um ambiente com ferramentas de
-captura de monitoramento, como Centengine, Nagios, </p>
+captura de monitoramento, como CentreonEngine, Nagios, Icinga</p>
 <p>O contéudo abaixo será apresentado:</p>
 <ul>
 <li>Um pouco de historia</li>
@@ -138,7 +141,7 @@ captura de monitoramento, como Centengine, Nagios, </p>
 <li>Navegando na interface</li>
 <li>Funcionamento e integração</li>
 <li>Gráficos e Relatorios</li>
-<li>CentEngine, Nagios, </li>
+<li>CentreonEngine, Nagios, Icinga</li>
 <li>Monitoramento distribuido</li>
 <li>Add-ons</li>
 <li>Tempo para perguntas</li>
@@ -231,33 +234,13 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="/tag/pfsense.html">
-                            pfsense
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="/tag/freebsd.html">
                             FreeBSD
                         </a>
                     </li>
-                    <li class="list-group-item tag-2">
-                        <a href="/tag/release.html">
-                            release
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="/tag/lancamento.html">
-                            lançamento
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="/tag/monitoramento.html">
-                            Monitoramento
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="/tag/centreon.html">
-                            Centreon
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/pfsense.html">
+                            pfsense
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
@@ -266,13 +249,43 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
+                        <a href="/tag/lancamento.html">
+                            lançamento
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-2">
+                        <a href="/tag/release.html">
+                            release
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-2">
+                        <a href="/tag/centreon.html">
+                            Centreon
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-2">
                         <a href="/tag/nagios.html">
                             Nagios
                         </a>
                     </li>
+                    <li class="list-group-item tag-2">
+                        <a href="/tag/monitoramento.html">
+                            Monitoramento
+                        </a>
+                    </li>
                     <li class="list-group-item tag-4">
-                        <a href="/tag/php.html">
-                            PHP
+                        <a href="/tag/zfs.html">
+                            zfs
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/gitlab.html">
+                            Gitlab
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/icinga.html">
+                            Icinga
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -281,13 +294,23 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="/tag/qos.html">
-                            qos
+                        <a href="/tag/gravacao.html">
+                            gravação
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="/tag/gitlab.html">
-                            Gitlab
+                        <a href="/tag/traffic-shapper.html">
+                            traffic shapper
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/php.html">
+                            PHP
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/opnsense.html">
+                            OPNsense
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -301,23 +324,8 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="/tag/zfs.html">
-                            zfs
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="/tag/traffic-shapper.html">
-                            traffic shapper
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="/tag/gravacao.html">
-                            gravação
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="/tag/opnsense.html">
-                            OPNsense
+                        <a href="/tag/qos.html">
+                            qos
                         </a>
                     </li>
                 </ul>
