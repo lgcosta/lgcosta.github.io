@@ -2,7 +2,7 @@
 <html lang="br"
 >
 <head>
-    <title>Hangout sobre Monitoramento Centreon - Blog GugaBSD</title>
+    <title>Hangout pf2ad no pfSense® 2.3 - Blog GugaBSD</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,34 +10,35 @@
 
 
 
-<link rel="canonical" href="http://luizgustavo.pro.br/blog/2015/04/23/hangout-sobre-monitoramento-centreon/">
+<link rel="canonical" href="../../../../2016/04/22/hangout-pf2ad-no-pfsenser-23/">
 
         <meta name="author" content="Luiz Gustavo Costa" />
-        <meta name="keywords" content="Monitoramento,Centreon,Nagios,Icinga,Hangout" />
-        <meta name="description" content="Olá amigos, neste novo Hangout estarei fazendo um apresentação sobre a ferramenta de monitoramento Centreon, junto com outros componentes que fazem parte do ambiente de monitoramento em rede. O Hangout acontecerá no dia 14 de maio/2015, às 20:00hrs Em duas horas de apresentação, abordaremos vários aspectos de funcionamento ..." />
+        <meta name="keywords" content="hangout,pfSense,pf2ad,AD" />
+        <meta name="description" content="Olá meu povo, com prazer, volto com a programação de nossa série de Hangouts sobre software livre, e dessa vez venho fazer uma apresentação e introdução sobre o projeto pf2ad no pfSense® 2.3" />
 
         <meta property="og:site_name" content="Blog GugaBSD" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Hangout sobre Monitoramento Centreon"/>
-        <meta property="og:url" content="http://luizgustavo.pro.br/blog/2015/04/23/hangout-sobre-monitoramento-centreon/"/>
-        <meta property="og:description" content="Olá amigos, neste novo Hangout estarei fazendo um apresentação sobre a ferramenta de monitoramento Centreon, junto com outros componentes que fazem parte do ambiente de monitoramento em rede. O Hangout acontecerá no dia 14 de maio/2015, às 20:00hrs Em duas horas de apresentação, abordaremos vários aspectos de funcionamento ..."/>
-        <meta property="article:published_time" content="2015-04-23" />
+        <meta property="og:title" content="Hangout pf2ad no pfSense® 2.3"/>
+        <meta property="og:url" content="../../../../2016/04/22/hangout-pf2ad-no-pfsenser-23/"/>
+        <meta property="og:description" content="Olá meu povo, com prazer, volto com a programação de nossa série de Hangouts sobre software livre, e dessa vez venho fazer uma apresentação e introdução sobre o projeto pf2ad no pfSense® 2.3"/>
+        <meta property="article:published_time" content="2016-04-22" />
             <meta property="article:section" content="Hangout" />
-            <meta property="article:tag" content="Monitoramento" />
-            <meta property="article:tag" content="Centreon" />
-            <meta property="article:tag" content="Nagios" />
-            <meta property="article:tag" content="Icinga" />
-            <meta property="article:tag" content="Hangout" />
+            <meta property="article:tag" content="hangout" />
+            <meta property="article:tag" content="pfSense" />
+            <meta property="article:tag" content="pf2ad" />
+            <meta property="article:tag" content="AD" />
             <meta property="article:author" content="Luiz Gustavo Costa" />
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://luizgustavo.pro.br/blog/theme/css/bootstrap.sandstone.min.css" type="text/css"/>
-    <link href="http://luizgustavo.pro.br/blog/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../../../../theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="http://luizgustavo.pro.br/blog/theme/css/pygments/monokai.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://luizgustavo.pro.br/blog/theme/css/style.css" type="text/css"/>
+    <link href="../../../../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../theme/css/style.css" type="text/css"/>
 
+        <link href="../../../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Blog GugaBSD ATOM Feed"/>
 
 </head>
 <body>
@@ -51,35 +52,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://luizgustavo.pro.br/blog/" class="navbar-brand">
+            <a href="../../../../" class="navbar-brand">
 Blog GugaBSD            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li><a href="http://luizgustavo.pro.br/blog/pages/contato.html">
+                         <li><a href="../../../../pages/contato.html">
                              Contato
                           </a></li>
-                         <li><a href="http://luizgustavo.pro.br/blog/pages/curriculum.html">
+                         <li><a href="../../../../pages/curriculum.html">
                              Curriculum
                           </a></li>
                         <li >
-                            <a href="http://luizgustavo.pro.br/blog/category/gerenciamento.html">Gerenciamento</a>
+                            <a href="../../../../category/gerenciamento.html">Gerenciamento</a>
                         </li>
                         <li class="active">
-                            <a href="http://luizgustavo.pro.br/blog/category/hangout.html">Hangout</a>
+                            <a href="../../../../category/hangout.html">Hangout</a>
                         </li>
                         <li >
-                            <a href="http://luizgustavo.pro.br/blog/category/lancamento.html">Lançamento</a>
+                            <a href="../../../../category/lancamento.html">Lançamento</a>
                         </li>
                         <li >
-                            <a href="http://luizgustavo.pro.br/blog/category/monitoramento.html">Monitoramento</a>
-                        </li>
-                        <li >
-                            <a href="http://luizgustavo.pro.br/blog/category/treinamento.html">Treinamento</a>
+                            <a href="../../../../category/monitoramento.html">Monitoramento</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="http://luizgustavo.pro.br/blog/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="../../../../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -95,10 +93,10 @@ Blog GugaBSD            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://luizgustavo.pro.br/blog/2015/04/23/hangout-sobre-monitoramento-centreon/"
+                    <a href="../../../../2016/04/22/hangout-pf2ad-no-pfsenser-23/"
                        rel="bookmark"
-                       title="Permalink to Hangout sobre Monitoramento Centreon">
-                        Hangout sobre Monitoramento Centreon
+                       title="Permalink to Hangout pf2ad no pfSense® 2.3">
+                        Hangout pf2ad no pfSense® 2.3
                     </a>
                 </h1>
             </header>
@@ -108,53 +106,81 @@ Blog GugaBSD            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-04-23T12:00:00-03:00"> Qui 23 abril 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-04-22T19:32:00-03:00"> Sex 22 abril 2016</time>
     </span>
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="http://luizgustavo.pro.br/blog/tag/monitoramento.html">Monitoramento</a>
+	<a href="../../../../tag/hangout.html">hangout</a>
         /
-	<a href="http://luizgustavo.pro.br/blog/tag/centreon.html">Centreon</a>
+	<a href="../../../../tag/pfsense.html">pfSense</a>
         /
-	<a href="http://luizgustavo.pro.br/blog/tag/nagios.html">Nagios</a>
+	<a href="../../../../tag/pf2ad.html">pf2ad</a>
         /
-	<a href="http://luizgustavo.pro.br/blog/tag/icinga.html">Icinga</a>
-        /
-	<a href="http://luizgustavo.pro.br/blog/tag/hangout.html">Hangout</a>
+	<a href="../../../../tag/ad.html">AD</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p><img alt="Centreon" src="/blog/images/blog/centreon_logo.png" title="Centreon Logo" /></p>
-<p>Olá amigos, neste novo Hangout estarei fazendo um apresentação sobre a
-ferramenta de monitoramento Centreon, junto com outros componentes que
-fazem parte do ambiente de monitoramento em rede.</p>
+                <p align="center"><img src="/blog/images/blog/hangout_pfsense.png"png" /></p>
+
+<p>Olá,</p>
+<p>Estou organizando a realização de um hangout sobre pf2ad:</p>
+<p><strong>Instalando e implementando o pf2ad no pfSense 2.3</strong></p>
 <blockquote>
-<p>O Hangout acontecerá no dia 14 de maio/2015, às 20:00hrs</p>
+<p>Data: 26/04/2016 as 20:00 hrs</p>
 </blockquote>
-<p>Em duas horas de apresentação, abordaremos vários aspectos de funcionamento
-do Centreon, acompanhados da instalação de um ambiente com ferramentas de
-captura de monitoramento, como CentreonEngine, Nagios, Icinga</p>
-<p>O contéudo abaixo será apresentado:</p>
+<p>E também para celebrar um pouco a minha volta ao mundo opensource, eu
+fiquei meio sumido por conta de projetos e outras coisas mais. Mas to
+voltando !</p>
+<p>Sobre o que vamos falar então no Hangout ?</p>
+<p>Bom, serão 2 (duas) horas de interatividade através da ferramenta da Google, abordando
+os seguintes itens:</p>
 <ul>
-<li>Um pouco de historia</li>
-<li>Comparativos: Centreon vs. Zabbix</li>
-<li>O que compoê o ambiente</li>
-<li>Navegando na interface</li>
-<li>Funcionamento e integração</li>
-<li>Gráficos e Relatorios</li>
-<li>CentreonEngine, Nagios, Icinga</li>
-<li>Monitoramento distribuido</li>
-<li>Add-ons</li>
-<li>Tempo para perguntas</li>
+<li>Introdução</li>
+<li>Sobre o Projeto</li>
+<li>Pacotes utilizados e sua construção</li>
+<li>Porque usar NTLM ?</li>
+<li>Mão na massa</li>
+<li>Ambientes</li>
+<li>Instalação</li>
+<li>Configuração inicial</li>
+<li>Configuração do SquidGuard integrado ao AD</li>
+<li>Configuração de filtros LDAP no AD</li>
+<li>Tempo para responder dúvidas</li>
 </ul>
-<p>Para participar deste Hangout, o minimo necessário do usuário é ter noção básica de utilização
-de interfaces de gerenciamento web e estar familiarizado com ferramentas de monitoramento, como
-Nagios ou Zabbix.</p>
-<p>Iremos trabalhar já com a versão a última versão disponivel para o dia do Hangout e iremos implementar uma mão na
-massa de ambientes propostos pelo os participantes do Hangout.</p>
-<p>Semelhantes aos outros Hangouts, as pessoas que querem participar ativamente do Hangout com perguntas, devem enviar um email para mim no endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança de R$ 50,00 para a participação, o limite de participantes é de 10 pessoas. Envie um email solicitando o convite e a data em que irá participar que eu irei enviar instruções de pagamento (Paypal esta incluido).</p>
+<p>Quanto a contribuição financeira deste, estou adotando um modelo
+diferente, na qual de forma voluntario, haja uma pré-inscrição para
+participação ativa no Hangout. Contribuição essa que visa arcar com o
+tempo dedicado aos tutoriais e projetos. Mas como falei, de forma
+voluntaria, eu peço uma contribuição de R$ 50,00 para a participação.</p>
+<p>Se mesmo assim você quiser participar e não pode contribuir, manda um
+email que a gente da um jeito !</p>
+<p>Então vamos lá !</p>
+<p>Para participar deste Hangout, o minimo necessário do usuário é ter
+noção básica de utilização de interfaces de gerenciamento web, assim
+como estar familiarizado com ambiente de firewall.</p>
+<p>Iremos trabalhar já com a versão a última versão disponível para o dia
+do Hangout (pfSense 2.3) e iremos implementar uma mão na massa de
+ambientes propostos pelo os participantes do Hangout.</p>
+<p>Semelhantes aos outros Hangouts, as pessoas que querem participar
+ativamente do Hangout com perguntas, devem enviar um email para mim no
+endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança
+(voluntaria) de R$ 50,00 para a participação, o limite de
+participantes é de 15 pessoas. Envie um email solicitando o convite
+que eu irei enviar instruções para participação.</p>
+<p>Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:</p>
+<div class="codehilite"><pre><span></span>Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+</pre></div>
+
+
+<p>Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para
+eu poder confirmar.</p>
 <p>Para a opção de Paypal, eu criei um botão para adquirir a inscrição para participação ativa:</p>
 <p align="center">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -165,21 +191,11 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
 </form>
 </p>
 
-<p>Se você quiser fazer transferencia bancaria, podera utilizar as contas abaixo:</p>
-<div class="codehilite"><pre><span class="n">Nr</span><span class="p">.</span> <span class="n">banco</span><span class="o">:</span> <span class="mo">001</span>
-<span class="n">Banco</span> <span class="k">do</span> <span class="n">Brasil</span>
-<span class="nl">AG:</span> <span class="mi">4398</span><span class="o">-</span><span class="mi">2</span>
-<span class="n">C</span><span class="o">/</span><span class="n">C</span><span class="o">:</span> <span class="mi">10613</span><span class="o">-</span><span class="mi">5</span>
-<span class="n">Luiz</span> <span class="n">Gustavo</span> <span class="n">dos</span> <span class="n">Santos</span> <span class="n">Costa</span>
-
-<span class="nl">CPF:</span> <span class="mf">084.219.847</span><span class="o">-</span><span class="mi">48</span>
-</pre></div>
-
-
-<p>Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para eu poder confirmar.</p>
-<p>Quem não quiser fazer a participação ativa, poderá acompanhar em tempo real o Hangout através do Youtube, no dia do evento, uma hora antes, estarei divulgando o link para assistir.</p>
+<p>Quem não quiser fazer a participação ativa, poderá acompanhar em tempo
+real o Hangout através do Youtube, no dia do evento, uma hora antes,
+estarei divulgando o link para assistir.</p>
 <p>O Hangout ficará disponivel no Youtube para visualização posterior</p>
-<p>Se tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.</p>
+<p>e tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.</p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -223,106 +239,111 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
 
 
 
-            <li class="list-group-item"><a href="http://luizgustavo.pro.br/blog/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="../../../../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
-                    <li class="list-group-item tag-1">
-                        <a href="http://luizgustavo.pro.br/blog/tag/hangout.html">
-                            Hangout
+                    <li class="list-group-item tag-0">
+                        <a href="../../../../tag/hangout.html">
+                            hangout
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="http://luizgustavo.pro.br/blog/tag/freebsd.html">
+                        <a href="../../../../tag/pfsense.html">
+                            pfSense
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="../../../../tag/freebsd.html">
                             FreeBSD
                         </a>
                     </li>
-                    <li class="list-group-item tag-1">
-                        <a href="http://luizgustavo.pro.br/blog/tag/pfsense.html">
-                            pfsense
+                    <li class="list-group-item tag-2">
+                        <a href="../../../../tag/release.html">
+                            release
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
-                        <a href="http://luizgustavo.pro.br/blog/tag/centreon.html">
-                            Centreon
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="http://luizgustavo.pro.br/blog/tag/firewall.html">
-                            Firewall
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="http://luizgustavo.pro.br/blog/tag/lancamento.html">
+                        <a href="../../../../tag/lancamento.html">
                             lançamento
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
-                        <a href="http://luizgustavo.pro.br/blog/tag/monitoramento.html">
-                            Monitoramento
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="http://luizgustavo.pro.br/blog/tag/icinga.html">
-                            Icinga
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="http://luizgustavo.pro.br/blog/tag/nagios.html">
-                            Nagios
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="http://luizgustavo.pro.br/blog/tag/release.html">
-                            release
+                        <a href="../../../../tag/firewall.html">
+                            Firewall
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/opnsense.html">
-                            OPNsense
+                        <a href="../../../../tag/pf2ad.html">
+                            pf2ad
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/gitlab.html">
-                            Gitlab
+                        <a href="../../../../tag/centreon.html">
+                            Centreon
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/screencast.html">
-                            screencast
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/cp.html">
-                            cp
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/zfs.html">
+                        <a href="../../../../tag/zfs.html">
                             zfs
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/traffic-shapper.html">
-                            traffic shapper
+                        <a href="../../../../tag/gitlab.html">
+                            Gitlab
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/qos.html">
+                        <a href="../../../../tag/monitoramento.html">
+                            Monitoramento
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../../../tag/screencast.html">
+                            screencast
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../../../tag/qos.html">
                             qos
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/gravacao.html">
+                        <a href="../../../../tag/gravacao.html">
                             gravação
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/samba4.html">
+                        <a href="../../../../tag/nagios.html">
+                            Nagios
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../../../tag/ad.html">
+                            AD
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../../../tag/opnsense.html">
+                            OPNsense
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../../../tag/samba4.html">
                             samba4
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://luizgustavo.pro.br/blog/tag/php.html">
+                        <a href="../../../../tag/cp.html">
+                            cp
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../../../tag/php.html">
                             PHP
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../../../tag/traffic-shapper.html">
+                            traffic shapper
                         </a>
                     </li>
                 </ul>
@@ -356,7 +377,7 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2015 Luiz Gustavo Costa
+         <div class="col-xs-10">&copy; 2016 Luiz Gustavo Costa
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
@@ -364,13 +385,13 @@ massa de ambientes propostos pelo os participantes do Hangout.</p>
       </div>
    </div>
 </footer>
-<script src="http://luizgustavo.pro.br/blog/theme/js/jquery.min.js"></script>
+<script src="../../../../theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://luizgustavo.pro.br/blog/theme/js/bootstrap.min.js"></script>
+<script src="../../../../theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://luizgustavo.pro.br/blog/theme/js/respond.min.js"></script>
+<script src="../../../../theme/js/respond.min.js"></script>
 
     <!-- Disqus -->
     <script type="text/javascript">

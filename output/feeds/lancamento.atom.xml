@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/lancamento.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2013-09-30T15:16:00-03:00</updated><entry><title>Lançado a versão 9.2 do FreeBSD</title><link href="http://luizgustavo.pro.br/blog/2013/09/30/lancado-a-versao-92-do-freebsd/" rel="alternate"></link><updated>2013-09-30T15:16:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-30:blog/2013/09/30/lancado-a-versao-92-do-freebsd/</id><summary type="html">&lt;p&gt;A equipe de lançamento do projeto FreeBSD acaba de anunciar a disponibilidade
+da versão 9.2 do FreeBSD. Este é o segundo release da arvore estavel da familia
+9 que provê mudanças de melhorias e estabilidade em relação ao FreeBSD 9.1 e 
+introduz algumas novas caracteristicas, que podem ser resumidas abaixo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O sistema de arquivo ZFS suporta agora o TRIM para ser usado em discos SSD.&lt;/li&gt;
+&lt;li&gt;Drivers de emulação virtio(4) foram adicionados no kernel GENERIC em arquiteturas
+  amd64 e i386.&lt;/li&gt;
+&lt;li&gt;O sistema de arquivo ZFS suporta agora compressão lz4.&lt;/li&gt;
+&lt;li&gt;OpenSSL foi atualizado para a versão 0.9.8y.&lt;/li&gt;
+&lt;li&gt;DTrace agora esta habilitado por padrão no kernel GENERIC.&lt;/li&gt;
+&lt;li&gt;DTrace foi atualizado para a versão 1.9.0.&lt;/li&gt;
+&lt;li&gt;Sendmail foi atualizado para a versão 8.14.7.&lt;/li&gt;
+&lt;li&gt;OpenSSH foi atualizado para a versão 6.2p2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para uma lista completa das novas funcionalidades e da resolução de problemas
+conhecidos, acesse os links abaixo (em inglês):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.FreeBSD.org/releases/9.2R/relnotes.html"&gt;http://www.FreeBSD.org/releases/9.2R/relnotes.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.FreeBSD.org/releases/9.2R/errata.html"&gt;http://www.FreeBSD.org/releases/9.2R/errata.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Veja o anuncio completo no link abaixo:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lists.freebsd.org/pipermail/freebsd-announce/2013-September/001504.html"&gt;http://lists.freebsd.org/pipermail/freebsd-announce/2013-September/001504.html&lt;/a&gt;&lt;/p&gt;</summary><category term="freebsd"></category><category term="release"></category><category term="lançamento"></category></entry><entry><title>Pfsense 2.1 RELEASE lançado oficialmente</title><link href="http://luizgustavo.pro.br/blog/2013/09/15/pfsense-21-release-lancado-oficialmente/" rel="alternate"></link><updated>2013-09-15T10:36:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-15:blog/2013/09/15/pfsense-21-release-lancado-oficialmente/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/pfsense_logo.png" style="background-color: #fff;" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A equipe de desenvolvimento do firewall Pfsense, com muito orgulho, anuncia no dia de hoje
+o lançamento da versão 2.1 do Pfsense, trazendo uma série de novidades, como o suporte a
+IPv6 nativo na interface de configuração.&lt;/p&gt;
+&lt;p&gt;Algumas mudanças se destacam:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Multiplos ambientes de Captive Portal&lt;/li&gt;
+&lt;li&gt;PBI (do PCBSD) como gerenciador de pacotes de softwares&lt;/li&gt;
+&lt;li&gt;Atualização do sistema base do FreeBSD para a versão 8.3&lt;/li&gt;
+&lt;li&gt;Adição de suporte a mais hardwares&lt;/li&gt;
+&lt;li&gt;PHP atualizado para a versão 5.3&lt;/li&gt;
+&lt;li&gt;Suporte a outras linguas (pt_BR já incluido)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Entre muitas outras alterações documentadas no blog do projeto.&lt;/p&gt;
+&lt;p&gt;Veja o link abaixo para maiores detalhes:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.pfsense.org/?p=712"&gt;http://blog.pfsense.org/?p=712&lt;/a&gt;&lt;/p&gt;</summary><category term="pfsense"></category><category term="release"></category><category term="lançamento"></category><category term="firewall"></category></entry></feed>

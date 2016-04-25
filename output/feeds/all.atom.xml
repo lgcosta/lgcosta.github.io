@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/all.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-04-22T19:32:00-03:00</updated><entry><title>Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-22T19:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-22:blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Olá,&lt;/p&gt;
+&lt;p&gt;Estou organizando a realização de um hangout sobre pf2ad:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instalando e implementando o pf2ad no pfSense 2.3&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data: 26/04/2016 as 20:00 hrs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;E também para celebrar um pouco a minha volta ao mundo opensource, eu
+fiquei meio sumido por conta de projetos e outras coisas mais. Mas to
+voltando !&lt;/p&gt;
+&lt;p&gt;Sobre o que vamos falar então no Hangout ?&lt;/p&gt;
+&lt;p&gt;Bom, serão 2 (duas) horas de interatividade através da ferramenta da Google, abordando
+os seguintes itens:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introdução&lt;/li&gt;
+&lt;li&gt;Sobre o Projeto&lt;/li&gt;
+&lt;li&gt;Pacotes utilizados e sua construção&lt;/li&gt;
+&lt;li&gt;Porque usar NTLM ?&lt;/li&gt;
+&lt;li&gt;Mão na massa&lt;/li&gt;
+&lt;li&gt;Ambientes&lt;/li&gt;
+&lt;li&gt;Instalação&lt;/li&gt;
+&lt;li&gt;Configuração inicial&lt;/li&gt;
+&lt;li&gt;Configuração do SquidGuard integrado ao AD&lt;/li&gt;
+&lt;li&gt;Configuração de filtros LDAP no AD&lt;/li&gt;
+&lt;li&gt;Tempo para responder dúvidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quanto a contribuição financeira deste, estou adotando um modelo
+diferente, na qual de forma voluntario, haja uma pré-inscrição para
+participação ativa no Hangout. Contribuição essa que visa arcar com o
+tempo dedicado aos tutoriais e projetos. Mas como falei, de forma
+voluntaria, eu peço uma contribuição de R$ 50,00 para a participação.&lt;/p&gt;
+&lt;p&gt;Se mesmo assim você quiser participar e não pode contribuir, manda um
+email que a gente da um jeito !&lt;/p&gt;
+&lt;p&gt;Então vamos lá !&lt;/p&gt;
+&lt;p&gt;Para participar deste Hangout, o minimo necessário do usuário é ter
+noção básica de utilização de interfaces de gerenciamento web, assim
+como estar familiarizado com ambiente de firewall.&lt;/p&gt;
+&lt;p&gt;Iremos trabalhar já com a versão a última versão disponível para o dia
+do Hangout (pfSense 2.3) e iremos implementar uma mão na massa de
+ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
+&lt;p&gt;Semelhantes aos outros Hangouts, as pessoas que querem participar
+ativamente do Hangout com perguntas, devem enviar um email para mim no
+endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança
+(voluntaria) de R$ 50,00 para a participação, o limite de
+participantes é de 15 pessoas. Envie um email solicitando o convite
+que eu irei enviar instruções para participação.&lt;/p&gt;
+&lt;p&gt;Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para
+eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Para a opção de Paypal, eu criei um botão para adquirir a inscrição para participação ativa:&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"&gt;
+&lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+&lt;input type="hidden" name="hosted_button_id" value="A2UUK9YZLAVW6"&gt;
+&lt;input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!"&gt;
+&lt;img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1"&gt;
+&lt;/form&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quem não quiser fazer a participação ativa, poderá acompanhar em tempo
+real o Hangout através do Youtube, no dia do evento, uma hora antes,
+estarei divulgando o link para assistir.&lt;/p&gt;
+&lt;p&gt;O Hangout ficará disponivel no Youtube para visualização posterior&lt;/p&gt;
+&lt;p&gt;e tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfSense"></category><category term="pf2ad"></category><category term="AD"></category></entry><entry><title>Hangout Introdução OPNsense</title><link href="http://luizgustavo.pro.br/blog/2015/04/22/hangout-introducao-opnsense/" rel="alternate"></link><updated>2015-04-22T17:00:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2015-04-22:blog/2015/04/22/hangout-introducao-opnsense/</id><summary type="html">&lt;p&gt;&lt;img alt="OPNsense" src="/blog/images/blog/opnsense.png" title="OPNsense Logo" /&gt;&lt;/p&gt;
+&lt;p&gt;Olá meu povo, com prazer, volto com a programação de nossa série de Hangouts
+sobre software livre, e dessa vez venho fazer uma apresentação e introdução
+sobre o projeto OPNsense.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;O Hangout esta agendado para o dia 12 de Maio/2015, em uma terça-feira, com inicio as 20:00hrs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Antes de mais nada, o que é OPNsense ?&lt;/p&gt;
+&lt;p&gt;OPNsense é um projeto que nasceu como fork do pfSense 2.2.x com o intuito
+de melhorar a parte de interface e aprimorar componentes internos com metodos
+alternativos ao usado no pfSense®.&lt;/p&gt;
+&lt;p&gt;Todas as informações sobre o projeto, você poderá encontrar nesse &lt;a href="https://opnsense.org/about/about-opnsense/"&gt;link&lt;/a&gt;
+ou no dia do Hangout :-)&lt;/p&gt;
+&lt;p&gt;Sobre o que vamos falar então no Hangout ?&lt;/p&gt;
+&lt;p&gt;Bom, serão 2 (duas) horas de interatividade através da ferramenta da Google, abordando
+os seguintes itens:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introdução&lt;/li&gt;
+&lt;li&gt;Sobre o Projeto&lt;/li&gt;
+&lt;li&gt;Vantagens vs. Desvantagens&lt;/li&gt;
+&lt;li&gt;Porque usar OPNsense ?&lt;/li&gt;
+&lt;li&gt;Mão na massa&lt;/li&gt;
+&lt;li&gt;Ambientes&lt;/li&gt;
+&lt;li&gt;Instalação&lt;/li&gt;
+&lt;li&gt;Configuração inicial&lt;/li&gt;
+&lt;li&gt;Caracteristicas da interface&lt;/li&gt;
+&lt;li&gt;Um pouco de console&lt;/li&gt;
+&lt;li&gt;Tempo para responder dúvidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para participar deste Hangout, o minimo necessário do usuário é ter noção básica de utilização
+de interfaces de gerenciamento web, assim como estar familiarizado com ambiente de firewall.&lt;/p&gt;
+&lt;p&gt;Iremos trabalhar já com a versão a última versão disponivel para o dia do Hangout e iremos implementar uma mão na
+massa de ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
+&lt;p&gt;Semelhantes aos outros Hangouts, as pessoas que querem participar ativamente do Hangout com perguntas, devem enviar um email para mim no endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança de R$ 50,00 para a participação, o limite de participantes é de 10 pessoas. Envie um email solicitando o convite e a data em que irá participar que eu irei enviar instruções de pagamento (Paypal esta incluido).&lt;/p&gt;
+&lt;p&gt;Para a opção de Paypal, eu criei um botão para adquirir a inscrição para participação ativa:&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"&gt;
+&lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+&lt;input type="hidden" name="hosted_button_id" value="A2UUK9YZLAVW6"&gt;
+&lt;input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!"&gt;
+&lt;img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1"&gt;
+&lt;/form&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Se você quiser fazer transferencia bancaria, podera utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;Nr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;banco&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt;
+&lt;span class="n"&gt;Banco&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="n"&gt;Brasil&lt;/span&gt;
+&lt;span class="nl"&gt;AG:&lt;/span&gt; &lt;span class="mi"&gt;4398&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;10613&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="n"&gt;Luiz&lt;/span&gt; &lt;span class="n"&gt;Gustavo&lt;/span&gt; &lt;span class="n"&gt;dos&lt;/span&gt; &lt;span class="n"&gt;Santos&lt;/span&gt; &lt;span class="n"&gt;Costa&lt;/span&gt;
+
+&lt;span class="nl"&gt;CPF:&lt;/span&gt; &lt;span class="mf"&gt;084.219.847&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;48&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Quem não quiser fazer a participação ativa, poderá acompanhar em tempo real o Hangout através do Youtube, no dia do evento, uma hora antes, estarei divulgando o link para assistir.&lt;/p&gt;
+&lt;p&gt;O Hangout ficará disponivel no Youtube para visualização posterior&lt;/p&gt;
+&lt;p&gt;Se tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="Firewall"></category><category term="OPNsense"></category><category term="FreeBSD"></category><category term="Hangout"></category></entry><entry><title>Lançado o Centreon 2.6</title><link href="http://luizgustavo.pro.br/blog/2015/04/22/lancado-o-centreon-26/" rel="alternate"></link><updated>2015-04-22T08:00:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2015-04-22:blog/2015/04/22/lancado-o-centreon-26/</id><summary type="html">&lt;p&gt;Hoje foi feito oficialmente o lançamento da versão 2.6 do Centreon.&lt;/p&gt;
+&lt;p&gt;Eu fiz abaixo uma tradução livre do &lt;a href="https://blog.centreon.com/centreon-2-6-released-today/"&gt;post original&lt;/a&gt;, acompanhe:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Centreon Logo" src="/blog/images/blog/centreon_logo.png" title="Centreon" /&gt;&lt;/p&gt;
+&lt;h3&gt;Experiência do usuário aprimorada e melhor exploração do ambiente...&lt;/h3&gt;
+&lt;p&gt;Centreon 2.6 oferece uma série de melhorias e aprimoramentos para permanecer 
+fiel ao que os usuários de longa data mais esperam sobre o Centreon, em destaque:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Escalabilidade continua em termos de uso&lt;/li&gt;
+&lt;li&gt;Melhor controle do usuário e adaptabilidade&lt;/li&gt;
+&lt;li&gt;Configuração mais fácil no uso geral&lt;/li&gt;
+&lt;li&gt;Adicionais de compatibilidade com os padrões da indústria de código aberto&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Continua Escalabilidade de Usuário&lt;/h3&gt;
+&lt;p&gt;Gerenciamento de ACL foi melhorada para permitir um maior número de usuários 
+simultâneos para trabalharem na mesma plataforma de monitoramento. 
+Com o lançamento do 2.6, Centreon está aumentando esses limites ainda mais.&lt;/p&gt;
+&lt;p&gt;Agora você pode esperar de forma razoável, a ter 30 usuários que exploram 
+a mesma plataforma de monitoramento, trabalhando em mais de 200 mil checagens a cada vez.&lt;/p&gt;
+&lt;h3&gt;Melhor de Controle do Usuário&lt;/h3&gt;
+&lt;p&gt;Uma das maiores vantagens da utilização de código aberto está na flexibilidade 
+para adaptar as suas capacidades técnicas ao nível do contexto do usuário e ambiente. 
+No Centreon, mantemos essa vantagem e para oferecermos tais capacidades para nossos usuários.&lt;/p&gt;
+&lt;p&gt;Na versão 2.6, um desses recursos é permitir que você possa promover traps SNMP com 
+execução do Centreontrapd. Você tem agora a possibilidade de:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transformar ou adaptar uma mensagem de saída de um trap SNMP, por exemplo, para padronizar as mensagens de saída de acordo com o que você precisa para monitorar;&lt;/li&gt;
+&lt;li&gt;Executar um código específico vinculado à uma mensagem de um trap SNMP, para acionar, por exemplo, algum serviço ou reiniciar processo;&lt;/li&gt;
+&lt;li&gt;Desconsiderar alguns traps SNMP de um host específico quando é declarada um tempo de inatividade.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outro exemplo, 2.6 permite reconstruir de forma eficiente a sua visão de 
+relatórios no caso de perda de informações devido a um incidente. 
+Centreon 2.6 faz isso executando uma simples análise do banco de dados de log 
+para regerar eventos necessários para a reconstrução. 
+Tudo que você precisa fazer é especificar uma data de início do incidente para recuperar as 
+informações necessárias. Dessa forma, a análise de todo o banco de dados 
+não é mais necessário e você economiza tempo e recursos.&lt;/p&gt;
+&lt;h3&gt;Mais fácil de configurar&lt;/h3&gt;
+&lt;p&gt;A configuração é simplificada com o lançamento da versão 2.6, para alcançar 
+uma integração homogénea com alterações óbvias para o ambiente de monitoramento existente.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Centreon 2.6 introduz a capacidade para os serviços dependentes de uma série de herdar automaticamente a sua criticidade configurado. Também é possível definir os níveis de criticidade global de um determinado host e de cluster serviços dependentes, graças à utilização de templates.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compatibilidade com a versão 5.4 do PHP&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fãs de Debian 6, Ubuntu 13.04, Redhat 7 e CentOS 7 vai apreciar a nova compatibilidade da versão 5.4 do PHP
+para a interface de usuário do Centreon 2.6.&lt;/p&gt;
+&lt;p&gt;A instalação do Centreon 2.6 para versão Entreprise é muito simples
+e de forma rápida, terá um ambiente de monitoramento homogêneo, distribuído e seguro!&lt;/p&gt;
+&lt;p&gt;Disponibilizado pela primeira vez na versão 2.6, a compatibilidade PHP é planejada
+como uma melhoria ao longo do tempo para todos os produtos Centreon, de forma gradual e segura.&lt;/p&gt;
+&lt;p&gt;Veja mais detalhes:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://documentation.centreon.com/docs/centreon/en/2.6.x/release_notes/centreon-2.6.0.html"&gt;Notas de lançamento&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://download.centreon.com/?tab=Centreon%20UI"&gt;Download&lt;/a&gt;&lt;/p&gt;</summary><category term="Centreon"></category><category term="PHP"></category><category term="Nagios"></category><category term="Monitoramento"></category></entry><entry><title>Instalação Gitlab no FreeBSD</title><link href="http://luizgustavo.pro.br/blog/2014/08/21/instalacao-gitlab-no-freebsd/" rel="alternate"></link><updated>2014-08-21T08:03:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2014-08-21:blog/2014/08/21/instalacao-gitlab-no-freebsd/</id><summary type="html">&lt;p&gt;&lt;img alt="Gitlab Logo" src="/blog/images/gitlab_logo.png" title="Gitlab Logo" /&gt;&lt;/p&gt;
+&lt;h2&gt;O que é Gitlab ?&lt;/h2&gt;
+&lt;p&gt;Gitlab é um gerenciador de repositorio GIT para o ambiente WEB com a maioria das opções oferecidas pelo o Github. Com o Gitlab você terá a oportunidade de ter seu próprio gerenciador de repositorio, no seu ambiente de trabalho. O projeto é desenvolvido em Ruby com o framework Ruby on Rails.&lt;/p&gt;
+&lt;p&gt;Veja mais detalhes no site do projeto: https://about.gitlab.org&lt;/p&gt;
+&lt;h4&gt;O que vamos usar ?&lt;/h4&gt;
+&lt;p&gt;Instalação pura do:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;FreeBSD 10 amd64 - GENERIC&lt;/em&gt;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# uname -a&lt;/span&gt;
+&lt;span class="n"&gt;FreeBSD&lt;/span&gt; &lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gugabsd&lt;/span&gt; &lt;span class="mf"&gt;10.0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;RELEASE&lt;/span&gt; &lt;span class="n"&gt;FreeBSD&lt;/span&gt; &lt;span class="mf"&gt;10.0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;RELEASE&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="n"&gt;r260789&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Thu&lt;/span&gt; &lt;span class="n"&gt;Jan&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt; &lt;span class="mi"&gt;22&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;34&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;59&lt;/span&gt; &lt;span class="n"&gt;UTC&lt;/span&gt; &lt;span class="mi"&gt;2014&lt;/span&gt;     &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;snap&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;freebsd&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;:/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;GENERIC&lt;/span&gt;  &lt;span class="n"&gt;amd64&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Gitlab 7.1 Stable&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;O que vamos precisar ?&lt;/h4&gt;
+&lt;p&gt;Vamos usar o gerenciador de pacotes binarios PKG para suprir nossa demanda de pacotes dependentes do Gitlab, para isso, execute o comando abaixo para atualizar o pkg:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;root@gitlab:~ # pkg update
+
+The package management tool is not yet installed on your system.
+Do you want to fetch and install it now? [y/N]: y
+Bootstrapping pkg from pkg+http://pkg.FreeBSD.org/freebsd:10:x86:64/latest, please wait...
+Verifying signature with trusted certificate pkg.freebsd.org.2013102301... done
+Installing pkg-1.3.6: 100%
+Message for pkg-1.3.6:
+ If you are upgrading from the old package format, first run:
+
+  # pkg2ng
+Updating repository catalogue
+Fetching meta.txz: 100% of 944 B                                                                   
+Fetching digests.txz: 100% of 2 MB                                                                  
+Fetching packagesite.txz: 100% of 5 MB
+
+Adding new entries: 100%
+Incremental update completed, 23436 packages processed:
+0 packages updated, 0 removed and 23436 added.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Feito isto, estamos preparado para instalar os pacotes necessários:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pkg&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;redis&lt;/span&gt; &lt;span class="n"&gt;icu&lt;/span&gt; &lt;span class="n"&gt;libxml2&lt;/span&gt; &lt;span class="n"&gt;libxslt&lt;/span&gt; &lt;span class="n"&gt;python2&lt;/span&gt; &lt;span class="n"&gt;bash&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;gcc&lt;/span&gt; &lt;span class="n"&gt;gmake&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para o RVM (veremos abaixo):&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pkg&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;autoconf&lt;/span&gt; &lt;span class="n"&gt;automake&lt;/span&gt; &lt;span class="n"&gt;libtool&lt;/span&gt; &lt;span class="n"&gt;bison&lt;/span&gt; &lt;span class="n"&gt;readline&lt;/span&gt; &lt;span class="n"&gt;libyaml&lt;/span&gt; &lt;span class="n"&gt;sqlite3&lt;/span&gt; &lt;span class="n"&gt;gdbm&lt;/span&gt; &lt;span class="n"&gt;cmake&lt;/span&gt; &lt;span class="n"&gt;pkgconf&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Vamos ligar nosso servidor Redis:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;redis_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;YES&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;redis&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;
+&lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;redis&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Nesse tutorial, vou fazer uso do Postgresql como base de dados do Gitlab, porém, o Gitlab também é compativel com Mysql, fica a seu criterio:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pkg&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;postgresql92&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;server&lt;/span&gt;
+&lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;postgresql_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;YES&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;postgresql&lt;/span&gt; &lt;span class="n"&gt;initdb&lt;/span&gt;
+&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;postgresql&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Crie a base que iremos usar com o Gitlab:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;su&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;pgsql&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;psql&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="n"&gt;template1&lt;/span&gt;
+&lt;span class="n"&gt;psql&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;9.2.9&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;Type&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;help&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+
+&lt;span class="n"&gt;template1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;CREATE&lt;/span&gt; &lt;span class="n"&gt;USER&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;CREATEDB&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;CREATE&lt;/span&gt; &lt;span class="n"&gt;ROLE&lt;/span&gt;
+&lt;span class="n"&gt;template1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;CREATE&lt;/span&gt; &lt;span class="n"&gt;DATABASE&lt;/span&gt; &lt;span class="n"&gt;gitlabhq_production&lt;/span&gt; &lt;span class="n"&gt;OWNER&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;CREATE&lt;/span&gt; &lt;span class="n"&gt;DATABASE&lt;/span&gt;
+&lt;span class="n"&gt;template1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Como vamos "enjaular" tudo em um usuário do sistema, vamos cria-lo no FreeBSD com o comando abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pw&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bash&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;GitLab&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;E com o usuário criado, vamos fazer o uso do Ruby, que é a linguagem de construção do Gitlab através do RVM. Para isto, vamos virar usuário &lt;code&gt;git&lt;/code&gt; e instalar o ambiente do RVM com uma versão do ruby:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;su&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; 
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="n"&gt;curl&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sSL&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//get.rvm.io | bash -s stable&lt;/span&gt;
+
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;scripts&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Agora, instalar o Ruby 2.1.2 necessário para o Gitlab 7.1:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;rvm install 2.1.2
+
+...
+
+Install of ruby-2.1.2 - &lt;span class="c"&gt;#complete&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Pronto, já estamos com o ambiente com Ruby instalado e preparado para implementar o Gitlab.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;which&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt;
+&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rubies&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;2.1.2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;
+&lt;span class="n"&gt;ruby&lt;/span&gt; &lt;span class="mf"&gt;2.1.2&lt;/span&gt;&lt;span class="n"&gt;p95&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;05&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;08&lt;/span&gt; &lt;span class="n"&gt;revision&lt;/span&gt; &lt;span class="mi"&gt;45877&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;freebsd10&lt;/span&gt;&lt;span class="mf"&gt;.0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Veja mais informações sobre o projeto RVM em: http://rvm.io/&lt;/p&gt;
+&lt;h4&gt;Começamos então a clonar o repositorio do Gitlab:&lt;/h4&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;cd&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//gitlab.com/gitlab-org/gitlab-ce.git -b 7-1-stable gitlab&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;E então, começar a configurar o Gitlab:&lt;/p&gt;
+&lt;p&gt;Copie o arquivo de exemplo do Gitlab:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;
+&lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;example&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;ee config/gitlab.yml&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Altere a entrada &lt;code&gt;localhost&lt;/code&gt; para o hostname/dominio completo do seu servidor, por exemplo: &lt;code&gt;gitlab.mundounix.com.br&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Se for usar https, altere a porta de escuta de 80 para 443&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Corriga o path do usuário git no arquivo de configuração para o formato &lt;code&gt;/usr/home/git&lt;/code&gt;, já que o Gitlab não se da bem com links simbolicos. Faça isso nas linhas: 199, 208, 211, 212 do arquivo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Atualize o cominho do binario do git para o padrão do FreeBSD: &lt;code&gt;/usr/local/bin/git&lt;/code&gt; na linha 225&lt;/p&gt;
+&lt;p&gt;cp config/unicorn.rb.example config/unicorn.rb&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;ee config/unicorn.rb&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Habilite o modo "cluster" se você tiver muito acesso, aumentando o número de "workes" de acordo com a carga do seu servidor (CPU, Memória, etc)&lt;/p&gt;
+&lt;p&gt;cp config/initializers/rack_attack.rb.example config/initializers/rack_attack.rb&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Habilite a configuração da base de dados do Postgresql:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;database&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;postgresql&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;database&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Configure uma conta global do GIT para o usuario git do sistema:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;GitLab&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;exemplo@exemplo.com&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;core&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;autocrlf&lt;/span&gt; &lt;span class="n"&gt;input&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Acertando algumas permissões:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;chown -R git log/
+chown -R git tmp/
+chmod -R u+rwX log/
+chmod -R u+rwX tmp/
+chmod -R u+rwX tmp/pids/
+chmod -R u+rwX tmp/sockets/
+chmod -R u+rwX  public/uploads
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Criando diretorios para "satellites":&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;satellites&lt;/span&gt;
+&lt;span class="n"&gt;chmod&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;rwx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;rx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rwx&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;satellites&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Vamos agora instalar os pacotes &lt;code&gt;Gems&lt;/code&gt;, que são uma série de libs do Ruby necessárias para o Gitlab funcionar, usando a ferramenta bundle:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;bundle&lt;/span&gt;
+
+&lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;CC&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;gcc47&lt;/span&gt;
+&lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;CXX&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="mi"&gt;47&lt;/span&gt;
+&lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;CPP&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cpp47&lt;/span&gt;
+
+&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;deployment&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;without&lt;/span&gt; &lt;span class="n"&gt;development&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;mysql&lt;/span&gt; &lt;span class="n"&gt;aws&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Instalação do Gitlab Shell&lt;/h2&gt;
+&lt;p&gt;GitLab Shell é um software de acesso ssh e gerenciamento de repositório desenvolvido especialmente para GitLab.&lt;/p&gt;
+&lt;p&gt;Vá para o diretorio de instalação do Gitlab:
+&lt;code&gt;cd /home/git/gitlab&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Rode uma tarefa de instalação do gitlab-shell:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;exec&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;shell&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;v1&lt;/span&gt;&lt;span class="mf"&gt;.9.6&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="n"&gt;REDIS_URL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;redis&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//localhost:6379 RAILS_ENV=production&lt;/span&gt;
+
+&lt;span class="cp"&gt;# Por padrão, a configuração gitlab-shell é gerado a partir de sua configuração do gitlab principal. &lt;/span&gt;
+&lt;span class="cp"&gt;# &lt;/span&gt;
+&lt;span class="cp"&gt;# Nota: Ao usar GitLab com HTTPS por favor alterar o seguinte: &lt;/span&gt;
+&lt;span class="cp"&gt;# - Fornecer caminhos para os certificados ca_file e ca_path. &lt;/span&gt;
+&lt;span class="cp"&gt;# - A opção &amp;quot;gitlab_url&amp;quot; deve apontar para o https do GitLab. &lt;/span&gt;
+&lt;span class="cp"&gt;# - No caso de você estiver usando o certificado auto-assinado, altere a opção &amp;quot;self_signed_cert&amp;quot; para &amp;quot;true&amp;quot;. &lt;/span&gt;
+&lt;span class="cp"&gt;# Você pode rever (e modificar) a configuração gitlab-shell da seguinte forma: &lt;/span&gt;
+&lt;span class="n"&gt;ee&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;shell&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Não esqueça ainda de alterar nesse arquivo de configuração o path (caminho) do usuário &lt;em&gt;git&lt;/em&gt;, de &lt;code&gt;/home/git&lt;/code&gt; para &lt;code&gt;/usr/home/git&lt;/code&gt; na linha 7 do arquivo.&lt;/p&gt;
+&lt;p&gt;Vamos agora inicializar a base de dados:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;exec&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt; &lt;span class="n"&gt;RAILS_ENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Verifique se esta tudo ok:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;exec&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;env&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt; &lt;span class="n"&gt;RAILS_ENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Configure o cache de componentes web da interface (assets):&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;exec&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;assets&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;precompile&lt;/span&gt; &lt;span class="n"&gt;RAILS_ENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Pronto ! Gitlab configurado, precisamos agora configurar a inicilização do mesmo:&lt;/p&gt;
+&lt;p&gt;Como root (saia do /home do git -&amp;gt; &lt;code&gt;exit&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;support&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Feito isso, vamos inicializar o Gitlab:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;
+&lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;both&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;GitLab&lt;/span&gt; &lt;span class="n"&gt;Unicorn&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;Sidekiq&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;The&lt;/span&gt; &lt;span class="n"&gt;GitLab&lt;/span&gt; &lt;span class="n"&gt;Unicorn&lt;/span&gt; &lt;span class="n"&gt;web&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;pid&lt;/span&gt; &lt;span class="mi"&gt;36244&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;running&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;The&lt;/span&gt; &lt;span class="n"&gt;GitLab&lt;/span&gt; &lt;span class="n"&gt;Sidekiq&lt;/span&gt; &lt;span class="n"&gt;job&lt;/span&gt; &lt;span class="n"&gt;dispatcher&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;pid&lt;/span&gt; &lt;span class="mi"&gt;36271&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;running&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;GitLab&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;all&lt;/span&gt; &lt;span class="n"&gt;its&lt;/span&gt; &lt;span class="n"&gt;components&lt;/span&gt; &lt;span class="n"&gt;are&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;running&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+
+&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;ps&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt;
+&lt;span class="mi"&gt;36244&lt;/span&gt;  &lt;span class="o"&gt;-&lt;/span&gt;  &lt;span class="n"&gt;S&lt;/span&gt;      &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;10.35&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;unicorn_rails&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;unicorn&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rb&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;E&lt;/span&gt; &lt;span class="n"&gt;prod&lt;/span&gt;
+&lt;span class="mi"&gt;36248&lt;/span&gt;  &lt;span class="o"&gt;-&lt;/span&gt;  &lt;span class="n"&gt;S&lt;/span&gt;      &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;00.00&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;unicorn_rails&lt;/span&gt; &lt;span class="n"&gt;worker&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;unicorn&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rb&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;E&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;
+&lt;span class="mi"&gt;36249&lt;/span&gt;  &lt;span class="o"&gt;-&lt;/span&gt;  &lt;span class="n"&gt;S&lt;/span&gt;      &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;00.00&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;unicorn_rails&lt;/span&gt; &lt;span class="n"&gt;worker&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;unicorn&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rb&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;E&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;
+&lt;span class="mi"&gt;36271&lt;/span&gt;  &lt;span class="o"&gt;-&lt;/span&gt;  &lt;span class="n"&gt;Ss&lt;/span&gt;     &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;10.15&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;sidekiq&lt;/span&gt; &lt;span class="mf"&gt;2.17.0&lt;/span&gt; &lt;span class="n"&gt;gitlab&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="mi"&gt;25&lt;/span&gt; &lt;span class="n"&gt;busy&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;:~&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;sockstat&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;4l&lt;/span&gt;
+&lt;span class="n"&gt;USER&lt;/span&gt;     &lt;span class="n"&gt;COMMAND&lt;/span&gt;    &lt;span class="n"&gt;PID&lt;/span&gt;   &lt;span class="n"&gt;FD&lt;/span&gt; &lt;span class="n"&gt;PROTO&lt;/span&gt;  &lt;span class="n"&gt;LOCAL&lt;/span&gt; &lt;span class="n"&gt;ADDRESS&lt;/span&gt;         &lt;span class="n"&gt;FOREIGN&lt;/span&gt; &lt;span class="n"&gt;ADDRESS&lt;/span&gt;      
+&lt;span class="n"&gt;git&lt;/span&gt;      &lt;span class="n"&gt;ruby&lt;/span&gt;       &lt;span class="mi"&gt;36249&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt; &lt;span class="n"&gt;tcp4&lt;/span&gt;   &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;8080&lt;/span&gt;        &lt;span class="o"&gt;*:*&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt;      &lt;span class="n"&gt;ruby&lt;/span&gt;       &lt;span class="mi"&gt;36248&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt; &lt;span class="n"&gt;tcp4&lt;/span&gt;   &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;8080&lt;/span&gt;        &lt;span class="o"&gt;*:*&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt;      &lt;span class="n"&gt;ruby&lt;/span&gt;       &lt;span class="mi"&gt;36244&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt; &lt;span class="n"&gt;tcp4&lt;/span&gt;   &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;8080&lt;/span&gt;        &lt;span class="o"&gt;*:*&lt;/span&gt;
+&lt;span class="n"&gt;pgsql&lt;/span&gt;    &lt;span class="n"&gt;postgres&lt;/span&gt;   &lt;span class="mi"&gt;11726&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;  &lt;span class="n"&gt;tcp4&lt;/span&gt;   &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;5432&lt;/span&gt;        &lt;span class="o"&gt;*:*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Vamos agora configurar um front para nosso Gitlab e para essa tarefa, vamos usar o Nginx. Porém, se você estiver familiarizado com outro servidor web, você poderá também configura-lo, basta consultar o endereço abaixo para mais informações:&lt;/p&gt;
+&lt;p&gt;https://gitlab.com/gitlab-org/gitlab-recipes/&lt;/p&gt;
+&lt;p&gt;Vamos instalar o NGINX:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pkg&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;nginx&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copie agora o arquivo de configuração pronto do Gitlab para NGINX:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;support&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Altere o arquivo de acordo com o seu hostname. &lt;em&gt;Isso é importante !&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Na linha 59, altere a entrada do proxy_pass para o endereço interno do Gitlab: http://127.0.0.1:8080;&lt;/li&gt;
+&lt;li&gt;Na linha 68, comente a entrada "gzip_static on;" colocando um "#" na frente. A versão do nginx compilada para o repositorio pkg não vem com suporte a gzip. Opcionalmente você poderá ativar isso compilando a versão do nginx para o ports.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adicione agora no arquivo /usr/local/etc/nginx/nginx.conf, antes do ultimo "}", na linha 117, o include para nosso arquivo de configuração do Gitlab:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;include&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitlab&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Alguns diretorios necessários para nosso ambiente:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;
+&lt;span class="n"&gt;chown&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;R&lt;/span&gt; &lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;E podemos agora configurar a inicialização do NGINX:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# echo &amp;#39;nginx_enable=&amp;quot;YES&amp;quot;&amp;#39; &amp;gt;&amp;gt; /etc/rc.conf&lt;/span&gt;
+&lt;span class="cp"&gt;# service nginx start&lt;/span&gt;
+&lt;span class="n"&gt;Performing&lt;/span&gt; &lt;span class="n"&gt;sanity&lt;/span&gt; &lt;span class="n"&gt;check&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;nginx&lt;/span&gt; &lt;span class="n"&gt;configuration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;span class="nl"&gt;nginx:&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;configuration&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt; &lt;span class="n"&gt;syntax&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;ok&lt;/span&gt;
+&lt;span class="nl"&gt;nginx:&lt;/span&gt; &lt;span class="n"&gt;configuration&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;successful&lt;/span&gt;
+&lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;nginx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Agora estamos com a configuração completa ! basta apontar seu navegador para o endereço do servidor e se logar com as credenciais padrões de inicialização:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;root&lt;/span&gt;
+&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="n"&gt;iveL&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="n"&gt;fe&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;É isso, qualquer dúvida, comente abaixo.&lt;/p&gt;
+&lt;p&gt;Referencias:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gitlab.com/gitlab-org/gitlab-ce/blob/7-1-stable/doc/install/installation.md"&gt;https://gitlab.com/gitlab-org/gitlab-ce/blob/7-1-stable/doc/install/installation.md&lt;/a&gt;&lt;/p&gt;</summary><category term="Gitlab"></category><category term="Freebsd"></category></entry><entry><title>Gravação Hangout Captive Portal</title><link href="http://luizgustavo.pro.br/blog/2013/10/13/gravacao-hangout-captive-portal/" rel="alternate"></link><updated>2013-10-13T09:52:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-10-13:blog/2013/10/13/gravacao-hangout-captive-portal/</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;
+&lt;/p&gt;
+Segue abaixo a gravação do Hangout Tutorial sobre Captive Portal no Pfsense.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/mav4PfjdBdk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Qualquer dúvida, só colocar no comentário abaixo.&lt;/p&gt;
+&lt;p&gt;Abraços&lt;/p&gt;</summary><category term="hangout"></category><category term="pfsense"></category><category term="cp"></category><category term="gravação"></category></entry><entry><title>Lançado a versão 9.2 do FreeBSD</title><link href="http://luizgustavo.pro.br/blog/2013/09/30/lancado-a-versao-92-do-freebsd/" rel="alternate"></link><updated>2013-09-30T15:16:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-30:blog/2013/09/30/lancado-a-versao-92-do-freebsd/</id><summary type="html">&lt;p&gt;A equipe de lançamento do projeto FreeBSD acaba de anunciar a disponibilidade
+da versão 9.2 do FreeBSD. Este é o segundo release da arvore estavel da familia
+9 que provê mudanças de melhorias e estabilidade em relação ao FreeBSD 9.1 e 
+introduz algumas novas caracteristicas, que podem ser resumidas abaixo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O sistema de arquivo ZFS suporta agora o TRIM para ser usado em discos SSD.&lt;/li&gt;
+&lt;li&gt;Drivers de emulação virtio(4) foram adicionados no kernel GENERIC em arquiteturas
+  amd64 e i386.&lt;/li&gt;
+&lt;li&gt;O sistema de arquivo ZFS suporta agora compressão lz4.&lt;/li&gt;
+&lt;li&gt;OpenSSL foi atualizado para a versão 0.9.8y.&lt;/li&gt;
+&lt;li&gt;DTrace agora esta habilitado por padrão no kernel GENERIC.&lt;/li&gt;
+&lt;li&gt;DTrace foi atualizado para a versão 1.9.0.&lt;/li&gt;
+&lt;li&gt;Sendmail foi atualizado para a versão 8.14.7.&lt;/li&gt;
+&lt;li&gt;OpenSSH foi atualizado para a versão 6.2p2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para uma lista completa das novas funcionalidades e da resolução de problemas
+conhecidos, acesse os links abaixo (em inglês):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.FreeBSD.org/releases/9.2R/relnotes.html"&gt;http://www.FreeBSD.org/releases/9.2R/relnotes.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.FreeBSD.org/releases/9.2R/errata.html"&gt;http://www.FreeBSD.org/releases/9.2R/errata.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Veja o anuncio completo no link abaixo:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lists.freebsd.org/pipermail/freebsd-announce/2013-September/001504.html"&gt;http://lists.freebsd.org/pipermail/freebsd-announce/2013-September/001504.html&lt;/a&gt;&lt;/p&gt;</summary><category term="freebsd"></category><category term="release"></category><category term="lançamento"></category></entry><entry><title>Pfsense 2.1 RELEASE lançado oficialmente</title><link href="http://luizgustavo.pro.br/blog/2013/09/15/pfsense-21-release-lancado-oficialmente/" rel="alternate"></link><updated>2013-09-15T10:36:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-15:blog/2013/09/15/pfsense-21-release-lancado-oficialmente/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/pfsense_logo.png" style="background-color: #fff;" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A equipe de desenvolvimento do firewall Pfsense, com muito orgulho, anuncia no dia de hoje
+o lançamento da versão 2.1 do Pfsense, trazendo uma série de novidades, como o suporte a
+IPv6 nativo na interface de configuração.&lt;/p&gt;
+&lt;p&gt;Algumas mudanças se destacam:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Multiplos ambientes de Captive Portal&lt;/li&gt;
+&lt;li&gt;PBI (do PCBSD) como gerenciador de pacotes de softwares&lt;/li&gt;
+&lt;li&gt;Atualização do sistema base do FreeBSD para a versão 8.3&lt;/li&gt;
+&lt;li&gt;Adição de suporte a mais hardwares&lt;/li&gt;
+&lt;li&gt;PHP atualizado para a versão 5.3&lt;/li&gt;
+&lt;li&gt;Suporte a outras linguas (pt_BR já incluido)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Entre muitas outras alterações documentadas no blog do projeto.&lt;/p&gt;
+&lt;p&gt;Veja o link abaixo para maiores detalhes:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.pfsense.org/?p=712"&gt;http://blog.pfsense.org/?p=712&lt;/a&gt;&lt;/p&gt;</summary><category term="pfsense"></category><category term="release"></category><category term="lançamento"></category><category term="firewall"></category></entry><entry><title>Gravação do Hangout Tutorial Traffic Shaper no Pfsense</title><link href="http://luizgustavo.pro.br/blog/2013/09/12/gravacao-do-hangout-tutorial-traffic-shaper-no-pfsense/" rel="alternate"></link><updated>2013-09-12T22:19:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-12:blog/2013/09/12/gravacao-do-hangout-tutorial-traffic-shaper-no-pfsense/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/hangout_pfsense.png" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Mais um Hangout Tutorial finalizado e com a dignissima participação em sala
+cheia de vários usuários, muito obrigado a todos que participaram interativamente
+e também via youtube ao-vivo. Foi bem legal.&lt;/p&gt;
+&lt;p&gt;O Hangout de hoje tratou do tema de controle de banda ou qualidade de serviço
+no Pfsense, entitulado "Traffic Shaper", abordamos os conceitos de utilização
+de cada tipo de algoritmo e funcionalidade de cada um no ambiente do Pfsense.&lt;/p&gt;
+&lt;p&gt;Tivemos a oportunidade de criar cenários de utilização e aplicação de regras para
+melhorar o controle de trafego da rede e elucidamos várias duvidas pertinentes à 
+utilização de QOS.&lt;/p&gt;
+&lt;p&gt;Confira abaixo, a integra desse Hangout:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/MOrUnAPv4VY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;E se você tiver alguma dúvida, poste um comentário abaixo.&lt;/p&gt;
+&lt;p&gt;Abraços !&lt;/p&gt;</summary><category term="hangout"></category><category term="pfsense"></category><category term="qos"></category><category term="traffic shapper"></category></entry><entry><title>"Gravação Hangout ZFS avançado no FreeBSD"</title><link href="http://luizgustavo.pro.br/blog/2013/09/10/gravacao-hangout-zfs-avancado-no-freebsd/" rel="alternate"></link><updated>2013-09-10T22:16:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-10:blog/2013/09/10/gravacao-hangout-zfs-avancado-no-freebsd/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/Freebsd-logo-full.png" style="background-color: #fff;" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Mais uma vez, só tenho a agradecer as pessoas que prestigiam o trabalho que tenho feito em cima dos Hangouts e segue mais uma gravação
+de Hangout Tutorial sobre Freebsd.&lt;/p&gt;
+&lt;p&gt;Essa é minha primeira etapa com o assunto Freebsd, abordando hoje um pouco sobre o assunto ZFS num modo avançado, implementando 
+o uso dele como sistema raiz do FreeBSD com o auxilio do mfsbsd (http://mfsbsd.vx.sk/).&lt;/p&gt;
+&lt;p&gt;Tirando dúvidas e abordando assuntos em relação a configuração do ZFS e metodos como RaidZ.&lt;/p&gt;
+&lt;p&gt;Segue a integra da gravação do Hangout Tutorial:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/4kTWO5M5o_M" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Qualquer dúvida, só deixar comentario abaixo.&lt;/p&gt;
+&lt;p&gt;Abraços.&lt;/p&gt;</summary><category term="hangout"></category><category term="freebsd"></category><category term="zfs"></category><category term="screencast"></category></entry><entry><title>Gravação Hangout Samba4 no Pfsense</title><link href="http://luizgustavo.pro.br/blog/2013/09/06/gravacao-hangout-samba4-no-pfsense/" rel="alternate"></link><updated>2013-09-06T01:45:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-06:blog/2013/09/06/gravacao-hangout-samba4-no-pfsense/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/samba4-logo.jpg" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Mais uma vez, agradeço a participação de todos em mais um Hangout, agora sobre
+a implementação do Samba4 no Pfsense.&lt;/p&gt;
+&lt;p&gt;Esse Hangout consiste em uma apresentação da construção do pacote do samba4 para
+o Pfsense, repassando alguns conceitos sobre o Samba4 e suas aplicações no Pfsense,
+mostrando o que esta sendo implementado na gui da interface web da ferramenta de
+firewall.&lt;/p&gt;
+&lt;p&gt;Ainda não foi possivel demonstrar o funcionamento da ferramenta em ação por falta
+de tempo, o que será feito em próximo Hangout já marcado para o próximo dia
+16/09.&lt;/p&gt;
+&lt;p&gt;Quem não participou desse, ainda tem change de participar da continuação. Temos
+vagas disponiveis para participação interativa do Hangout.&lt;/p&gt;
+&lt;p&gt;Abaixo, segue a integra do Hangout:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/QkDTc4M4d38" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Quem quiser participar da segunda parte, entre em contato comigo através do email:
+luizgustavo@luizgustavo.pro.br ou no link contato.&lt;/p&gt;
+&lt;p&gt;Obrigado.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfsense"></category><category term="firewall"></category><category term="samba4"></category></entry></feed>

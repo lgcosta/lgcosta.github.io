@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/hangout.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-04-22T19:32:00-03:00</updated><entry><title>Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-22T19:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-22:blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Olá,&lt;/p&gt;
+&lt;p&gt;Estou organizando a realização de um hangout sobre pf2ad:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instalando e implementando o pf2ad no pfSense 2.3&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data: 26/04/2016 as 20:00 hrs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;E também para celebrar um pouco a minha volta ao mundo opensource, eu
+fiquei meio sumido por conta de projetos e outras coisas mais. Mas to
+voltando !&lt;/p&gt;
+&lt;p&gt;Sobre o que vamos falar então no Hangout ?&lt;/p&gt;
+&lt;p&gt;Bom, serão 2 (duas) horas de interatividade através da ferramenta da Google, abordando
+os seguintes itens:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introdução&lt;/li&gt;
+&lt;li&gt;Sobre o Projeto&lt;/li&gt;
+&lt;li&gt;Pacotes utilizados e sua construção&lt;/li&gt;
+&lt;li&gt;Porque usar NTLM ?&lt;/li&gt;
+&lt;li&gt;Mão na massa&lt;/li&gt;
+&lt;li&gt;Ambientes&lt;/li&gt;
+&lt;li&gt;Instalação&lt;/li&gt;
+&lt;li&gt;Configuração inicial&lt;/li&gt;
+&lt;li&gt;Configuração do SquidGuard integrado ao AD&lt;/li&gt;
+&lt;li&gt;Configuração de filtros LDAP no AD&lt;/li&gt;
+&lt;li&gt;Tempo para responder dúvidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quanto a contribuição financeira deste, estou adotando um modelo
+diferente, na qual de forma voluntario, haja uma pré-inscrição para
+participação ativa no Hangout. Contribuição essa que visa arcar com o
+tempo dedicado aos tutoriais e projetos. Mas como falei, de forma
+voluntaria, eu peço uma contribuição de R$ 50,00 para a participação.&lt;/p&gt;
+&lt;p&gt;Se mesmo assim você quiser participar e não pode contribuir, manda um
+email que a gente da um jeito !&lt;/p&gt;
+&lt;p&gt;Então vamos lá !&lt;/p&gt;
+&lt;p&gt;Para participar deste Hangout, o minimo necessário do usuário é ter
+noção básica de utilização de interfaces de gerenciamento web, assim
+como estar familiarizado com ambiente de firewall.&lt;/p&gt;
+&lt;p&gt;Iremos trabalhar já com a versão a última versão disponível para o dia
+do Hangout (pfSense 2.3) e iremos implementar uma mão na massa de
+ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
+&lt;p&gt;Semelhantes aos outros Hangouts, as pessoas que querem participar
+ativamente do Hangout com perguntas, devem enviar um email para mim no
+endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança
+(voluntaria) de R$ 50,00 para a participação, o limite de
+participantes é de 15 pessoas. Envie um email solicitando o convite
+que eu irei enviar instruções para participação.&lt;/p&gt;
+&lt;p&gt;Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para
+eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Para a opção de Paypal, eu criei um botão para adquirir a inscrição para participação ativa:&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"&gt;
+&lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+&lt;input type="hidden" name="hosted_button_id" value="A2UUK9YZLAVW6"&gt;
+&lt;input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!"&gt;
+&lt;img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1"&gt;
+&lt;/form&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quem não quiser fazer a participação ativa, poderá acompanhar em tempo
+real o Hangout através do Youtube, no dia do evento, uma hora antes,
+estarei divulgando o link para assistir.&lt;/p&gt;
+&lt;p&gt;O Hangout ficará disponivel no Youtube para visualização posterior&lt;/p&gt;
+&lt;p&gt;e tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfSense"></category><category term="pf2ad"></category><category term="AD"></category></entry><entry><title>Hangout Introdução OPNsense</title><link href="http://luizgustavo.pro.br/blog/2015/04/22/hangout-introducao-opnsense/" rel="alternate"></link><updated>2015-04-22T17:00:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2015-04-22:blog/2015/04/22/hangout-introducao-opnsense/</id><summary type="html">&lt;p&gt;&lt;img alt="OPNsense" src="/blog/images/blog/opnsense.png" title="OPNsense Logo" /&gt;&lt;/p&gt;
+&lt;p&gt;Olá meu povo, com prazer, volto com a programação de nossa série de Hangouts
+sobre software livre, e dessa vez venho fazer uma apresentação e introdução
+sobre o projeto OPNsense.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;O Hangout esta agendado para o dia 12 de Maio/2015, em uma terça-feira, com inicio as 20:00hrs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Antes de mais nada, o que é OPNsense ?&lt;/p&gt;
+&lt;p&gt;OPNsense é um projeto que nasceu como fork do pfSense 2.2.x com o intuito
+de melhorar a parte de interface e aprimorar componentes internos com metodos
+alternativos ao usado no pfSense®.&lt;/p&gt;
+&lt;p&gt;Todas as informações sobre o projeto, você poderá encontrar nesse &lt;a href="https://opnsense.org/about/about-opnsense/"&gt;link&lt;/a&gt;
+ou no dia do Hangout :-)&lt;/p&gt;
+&lt;p&gt;Sobre o que vamos falar então no Hangout ?&lt;/p&gt;
+&lt;p&gt;Bom, serão 2 (duas) horas de interatividade através da ferramenta da Google, abordando
+os seguintes itens:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introdução&lt;/li&gt;
+&lt;li&gt;Sobre o Projeto&lt;/li&gt;
+&lt;li&gt;Vantagens vs. Desvantagens&lt;/li&gt;
+&lt;li&gt;Porque usar OPNsense ?&lt;/li&gt;
+&lt;li&gt;Mão na massa&lt;/li&gt;
+&lt;li&gt;Ambientes&lt;/li&gt;
+&lt;li&gt;Instalação&lt;/li&gt;
+&lt;li&gt;Configuração inicial&lt;/li&gt;
+&lt;li&gt;Caracteristicas da interface&lt;/li&gt;
+&lt;li&gt;Um pouco de console&lt;/li&gt;
+&lt;li&gt;Tempo para responder dúvidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para participar deste Hangout, o minimo necessário do usuário é ter noção básica de utilização
+de interfaces de gerenciamento web, assim como estar familiarizado com ambiente de firewall.&lt;/p&gt;
+&lt;p&gt;Iremos trabalhar já com a versão a última versão disponivel para o dia do Hangout e iremos implementar uma mão na
+massa de ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
+&lt;p&gt;Semelhantes aos outros Hangouts, as pessoas que querem participar ativamente do Hangout com perguntas, devem enviar um email para mim no endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança de R$ 50,00 para a participação, o limite de participantes é de 10 pessoas. Envie um email solicitando o convite e a data em que irá participar que eu irei enviar instruções de pagamento (Paypal esta incluido).&lt;/p&gt;
+&lt;p&gt;Para a opção de Paypal, eu criei um botão para adquirir a inscrição para participação ativa:&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"&gt;
+&lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+&lt;input type="hidden" name="hosted_button_id" value="A2UUK9YZLAVW6"&gt;
+&lt;input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!"&gt;
+&lt;img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1"&gt;
+&lt;/form&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Se você quiser fazer transferencia bancaria, podera utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;Nr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;banco&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt;
+&lt;span class="n"&gt;Banco&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="n"&gt;Brasil&lt;/span&gt;
+&lt;span class="nl"&gt;AG:&lt;/span&gt; &lt;span class="mi"&gt;4398&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;10613&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="n"&gt;Luiz&lt;/span&gt; &lt;span class="n"&gt;Gustavo&lt;/span&gt; &lt;span class="n"&gt;dos&lt;/span&gt; &lt;span class="n"&gt;Santos&lt;/span&gt; &lt;span class="n"&gt;Costa&lt;/span&gt;
+
+&lt;span class="nl"&gt;CPF:&lt;/span&gt; &lt;span class="mf"&gt;084.219.847&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;48&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Quem não quiser fazer a participação ativa, poderá acompanhar em tempo real o Hangout através do Youtube, no dia do evento, uma hora antes, estarei divulgando o link para assistir.&lt;/p&gt;
+&lt;p&gt;O Hangout ficará disponivel no Youtube para visualização posterior&lt;/p&gt;
+&lt;p&gt;Se tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="Firewall"></category><category term="OPNsense"></category><category term="FreeBSD"></category><category term="Hangout"></category></entry><entry><title>Gravação Hangout Captive Portal</title><link href="http://luizgustavo.pro.br/blog/2013/10/13/gravacao-hangout-captive-portal/" rel="alternate"></link><updated>2013-10-13T09:52:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-10-13:blog/2013/10/13/gravacao-hangout-captive-portal/</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;
+&lt;/p&gt;
+Segue abaixo a gravação do Hangout Tutorial sobre Captive Portal no Pfsense.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/mav4PfjdBdk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Qualquer dúvida, só colocar no comentário abaixo.&lt;/p&gt;
+&lt;p&gt;Abraços&lt;/p&gt;</summary><category term="hangout"></category><category term="pfsense"></category><category term="cp"></category><category term="gravação"></category></entry><entry><title>Gravação do Hangout Tutorial Traffic Shaper no Pfsense</title><link href="http://luizgustavo.pro.br/blog/2013/09/12/gravacao-do-hangout-tutorial-traffic-shaper-no-pfsense/" rel="alternate"></link><updated>2013-09-12T22:19:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-12:blog/2013/09/12/gravacao-do-hangout-tutorial-traffic-shaper-no-pfsense/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/hangout_pfsense.png" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Mais um Hangout Tutorial finalizado e com a dignissima participação em sala
+cheia de vários usuários, muito obrigado a todos que participaram interativamente
+e também via youtube ao-vivo. Foi bem legal.&lt;/p&gt;
+&lt;p&gt;O Hangout de hoje tratou do tema de controle de banda ou qualidade de serviço
+no Pfsense, entitulado "Traffic Shaper", abordamos os conceitos de utilização
+de cada tipo de algoritmo e funcionalidade de cada um no ambiente do Pfsense.&lt;/p&gt;
+&lt;p&gt;Tivemos a oportunidade de criar cenários de utilização e aplicação de regras para
+melhorar o controle de trafego da rede e elucidamos várias duvidas pertinentes à 
+utilização de QOS.&lt;/p&gt;
+&lt;p&gt;Confira abaixo, a integra desse Hangout:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/MOrUnAPv4VY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;E se você tiver alguma dúvida, poste um comentário abaixo.&lt;/p&gt;
+&lt;p&gt;Abraços !&lt;/p&gt;</summary><category term="hangout"></category><category term="pfsense"></category><category term="qos"></category><category term="traffic shapper"></category></entry><entry><title>"Gravação Hangout ZFS avançado no FreeBSD"</title><link href="http://luizgustavo.pro.br/blog/2013/09/10/gravacao-hangout-zfs-avancado-no-freebsd/" rel="alternate"></link><updated>2013-09-10T22:16:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-10:blog/2013/09/10/gravacao-hangout-zfs-avancado-no-freebsd/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/Freebsd-logo-full.png" style="background-color: #fff;" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Mais uma vez, só tenho a agradecer as pessoas que prestigiam o trabalho que tenho feito em cima dos Hangouts e segue mais uma gravação
+de Hangout Tutorial sobre Freebsd.&lt;/p&gt;
+&lt;p&gt;Essa é minha primeira etapa com o assunto Freebsd, abordando hoje um pouco sobre o assunto ZFS num modo avançado, implementando 
+o uso dele como sistema raiz do FreeBSD com o auxilio do mfsbsd (http://mfsbsd.vx.sk/).&lt;/p&gt;
+&lt;p&gt;Tirando dúvidas e abordando assuntos em relação a configuração do ZFS e metodos como RaidZ.&lt;/p&gt;
+&lt;p&gt;Segue a integra da gravação do Hangout Tutorial:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/4kTWO5M5o_M" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Qualquer dúvida, só deixar comentario abaixo.&lt;/p&gt;
+&lt;p&gt;Abraços.&lt;/p&gt;</summary><category term="hangout"></category><category term="freebsd"></category><category term="zfs"></category><category term="screencast"></category></entry><entry><title>Gravação Hangout Samba4 no Pfsense</title><link href="http://luizgustavo.pro.br/blog/2013/09/06/gravacao-hangout-samba4-no-pfsense/" rel="alternate"></link><updated>2013-09-06T01:45:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-09-06:blog/2013/09/06/gravacao-hangout-samba4-no-pfsense/</id><summary type="html">&lt;p align="center"&gt;
+    &lt;img src="/blog/images/blog/samba4-logo.jpg" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Mais uma vez, agradeço a participação de todos em mais um Hangout, agora sobre
+a implementação do Samba4 no Pfsense.&lt;/p&gt;
+&lt;p&gt;Esse Hangout consiste em uma apresentação da construção do pacote do samba4 para
+o Pfsense, repassando alguns conceitos sobre o Samba4 e suas aplicações no Pfsense,
+mostrando o que esta sendo implementado na gui da interface web da ferramenta de
+firewall.&lt;/p&gt;
+&lt;p&gt;Ainda não foi possivel demonstrar o funcionamento da ferramenta em ação por falta
+de tempo, o que será feito em próximo Hangout já marcado para o próximo dia
+16/09.&lt;/p&gt;
+&lt;p&gt;Quem não participou desse, ainda tem change de participar da continuação. Temos
+vagas disponiveis para participação interativa do Hangout.&lt;/p&gt;
+&lt;p&gt;Abaixo, segue a integra do Hangout:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/QkDTc4M4d38" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Quem quiser participar da segunda parte, entre em contato comigo através do email:
+luizgustavo@luizgustavo.pro.br ou no link contato.&lt;/p&gt;
+&lt;p&gt;Obrigado.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfsense"></category><category term="firewall"></category><category term="samba4"></category></entry></feed>

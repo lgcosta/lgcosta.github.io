@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Luiz Gustavo Costa'
 SITENAME = u'Blog GugaBSD'
 SITEURL = 'http://luizgustavo.pro.br/blog/'
-STATIC_PATHS = ['blog/images']
+STATIC_PATHS = ['images']
 #EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
