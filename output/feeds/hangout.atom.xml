@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/hangout.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-04-22T19:32:00-03:00</updated><entry><title>Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-22T19:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-22:blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/hangout.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-04-27T09:32:00-03:00</updated><entry><title>Gravação Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/27/gravacao-hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-27T09:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-27:blog/2016/04/27/gravacao-hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Olá,&lt;/p&gt;
+&lt;p&gt;Abaixo, segue a gravação do Hangout realizado no dia 26/04/16 que foi um sucess, trata-se da apresentação e introdução do pf2ad no pfSense® 2.3.&lt;/p&gt;
+&lt;p&gt;O Hangout foi organizado a apresentar os seguintes topicos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introdução&lt;/li&gt;
+&lt;li&gt;Sobre o Projeto&lt;/li&gt;
+&lt;li&gt;Pacotes utilizados e sua construção&lt;/li&gt;
+&lt;li&gt;Porque usar NTLM ?&lt;/li&gt;
+&lt;li&gt;Mão na massa&lt;/li&gt;
+&lt;li&gt;Ambientes&lt;/li&gt;
+&lt;li&gt;Instalação&lt;/li&gt;
+&lt;li&gt;Configuração inicial&lt;/li&gt;
+&lt;li&gt;Configuração do SquidGuard integrado ao AD&lt;/li&gt;
+&lt;li&gt;Configuração de filtros LDAP no AD&lt;/li&gt;
+&lt;li&gt;Tempo para responder dúvidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Se você gostar do conteúdo e puder contribuir financeiramente de alguma forma, por favor, use as informações abaixo ou entre em contato no meu email. Isso é de grande valia e incentivo para dar-mos continuidades da contribuição de conteúdo e conhecimento.&lt;/p&gt;
+&lt;p&gt;Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para
+eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Segue o conteúdo da gravação:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/C84EJcrwEvg" allowfullscreen seamless frameBorder="0"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Quem tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;
+&lt;p&gt;Obrigado.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfSense"></category><category term="pf2ad"></category><category term="AD"></category></entry><entry><title>Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-22T19:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-22:blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Olá,&lt;/p&gt;
 &lt;p&gt;Estou organizando a realização de um hangout sobre pf2ad:&lt;/p&gt;
@@ -117,13 +152,13 @@ massa de ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Se você quiser fazer transferencia bancaria, podera utilizar as contas abaixo:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;Nr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;banco&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt;
-&lt;span class="n"&gt;Banco&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="n"&gt;Brasil&lt;/span&gt;
-&lt;span class="nl"&gt;AG:&lt;/span&gt; &lt;span class="mi"&gt;4398&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;10613&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="n"&gt;Luiz&lt;/span&gt; &lt;span class="n"&gt;Gustavo&lt;/span&gt; &lt;span class="n"&gt;dos&lt;/span&gt; &lt;span class="n"&gt;Santos&lt;/span&gt; &lt;span class="n"&gt;Costa&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
 
-&lt;span class="nl"&gt;CPF:&lt;/span&gt; &lt;span class="mf"&gt;084.219.847&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;48&lt;/span&gt;
+CPF: 084.219.847-48
 &lt;/pre&gt;&lt;/div&gt;
 
 
