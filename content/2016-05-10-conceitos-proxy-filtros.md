@@ -13,7 +13,7 @@ Estou organizando a realização de um hangout sobre:
 
 **Abordando conceitos de filtragem de proxy no pfSense€**
 
-> O Hangout será realizdo em:
+> O Hangout será realizado em:
 > Data: 17/05/2016 as 20:00 hrs
 
 Sobre o que vamos falar então no Hangout ?
