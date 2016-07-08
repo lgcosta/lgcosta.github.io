@@ -1,4 +1,4 @@
-Title: Hangout Squid com balanceamento de link no pfSense
+Title: Squid com balanceamento de link no pfSense
 Date: 2016-07-08 10:30
 Category: Hangout
 Tags: hangout, pfSense, Squid
