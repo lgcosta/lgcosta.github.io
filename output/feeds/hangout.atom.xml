@@ -1,5 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/hangout.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-04-22T19:32:00-03:00</updated><entry><title>Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-22T19:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-22:blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/hangout.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-05-10T12:18:00-03:00</updated><entry><title>Abordando conceitos de filtragem de proxy</title><link href="http://luizgustavo.pro.br/blog/2016/05/10/abordando-conceitos-de-filtragem-de-proxy/" rel="alternate"></link><updated>2016-05-10T12:18:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-05-10:blog/2016/05/10/abordando-conceitos-de-filtragem-de-proxy/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Olá,&lt;/p&gt;
+&lt;p&gt;Estou organizando a realização de um hangout sobre:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abordando conceitos de filtragem de proxy no pfSense€&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;O Hangout será realizado em:
+Data: 17/05/2016 as 20:00 hrs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sobre o que vamos falar então no Hangout ?&lt;/p&gt;
+&lt;p&gt;Serão 2 (duas) horas de interatividade através da ferramenta da Google, abordando
+os seguintes itens:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configuração do pf2ad&lt;/li&gt;
+&lt;li&gt;Instalação e configuração do Squidguard&lt;/li&gt;
+&lt;li&gt;Criação de filtros baseado no AD&lt;/li&gt;
+&lt;li&gt;Gerenciamento da Blacklist&lt;/li&gt;
+&lt;li&gt;Configurando Active Directory para filtro&lt;/li&gt;
+&lt;li&gt;Usando GPO para automatizar configuração de browser&lt;/li&gt;
+&lt;li&gt;Usando WPAD para automatizar configuração de browser&lt;/li&gt;
+&lt;li&gt;Relatorios de acesso&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plus:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Load balance de link + Squid Proxy&lt;/li&gt;
+&lt;li&gt;QOS + Squid Proxy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quanto a contribuição financeira deste, estou adotando um modelo
+diferente, na qual de forma voluntario, haja uma pré-inscrição para
+participação ativa no Hangout. Contribuição essa que visa arcar com o
+tempo dedicado aos tutoriais e projetos. Mas como falei, de forma
+voluntaria, eu peço uma contribuição de R$ 50,00 para a participação.&lt;/p&gt;
+&lt;p&gt;Se mesmo assim você quiser participar e não puder contribuir, manda um
+email que a gente da um jeito !&lt;/p&gt;
+&lt;p&gt;Então vamos lá !&lt;/p&gt;
+&lt;p&gt;Para participar deste Hangout, o minimo necessário do usuário é ter
+noção básica de utilização de interfaces de gerenciamento web, assim
+como estar familiarizado com ambiente de firewall.&lt;/p&gt;
+&lt;p&gt;Iremos trabalhar já com a versão a última versão disponível para o dia
+do Hangout (pfSense 2.3) e iremos implementar uma mão na massa de
+ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
+&lt;p&gt;Semelhantes aos outros Hangouts, as pessoas que querem participar
+ativamente do Hangout com perguntas, devem enviar um email para mim no
+endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança
+(voluntaria) de R$ 50,00 para a participação, o limite de
+participantes é de 15 pessoas. Envie um email solicitando o convite
+que eu irei enviar instruções para participação.&lt;/p&gt;
+&lt;p&gt;Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para
+eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Para a opção de Paypal, eu criei um botão para adquirir a inscrição para participação ativa:&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"&gt;
+&lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+&lt;input type="hidden" name="hosted_button_id" value="A2UUK9YZLAVW6"&gt;
+&lt;input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!"&gt;
+&lt;img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1"&gt;
+&lt;/form&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quem não quiser fazer a participação ativa, poderá acompanhar em tempo
+real o Hangout através do Youtube, no dia do evento, uma hora antes,
+estarei divulgando o link para assistir.&lt;/p&gt;
+&lt;p&gt;O Hangout ficará disponivel no Youtube para visualização posterior&lt;/p&gt;
+&lt;p&gt;e tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfSense"></category><category term="pf2ad"></category><category term="AD"></category></entry><entry><title>Gravação Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/27/gravacao-hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-27T09:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-27:blog/2016/04/27/gravacao-hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Olá,&lt;/p&gt;
+&lt;p&gt;Abaixo, segue a gravação do Hangout realizado no dia 26/04/16 que foi um sucess, trata-se da apresentação e introdução do pf2ad no pfSense® 2.3.&lt;/p&gt;
+&lt;p&gt;O Hangout foi organizado a apresentar os seguintes topicos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introdução&lt;/li&gt;
+&lt;li&gt;Sobre o Projeto&lt;/li&gt;
+&lt;li&gt;Pacotes utilizados e sua construção&lt;/li&gt;
+&lt;li&gt;Porque usar NTLM ?&lt;/li&gt;
+&lt;li&gt;Mão na massa&lt;/li&gt;
+&lt;li&gt;Ambientes&lt;/li&gt;
+&lt;li&gt;Instalação&lt;/li&gt;
+&lt;li&gt;Configuração inicial&lt;/li&gt;
+&lt;li&gt;Configuração do SquidGuard integrado ao AD&lt;/li&gt;
+&lt;li&gt;Configuração de filtros LDAP no AD&lt;/li&gt;
+&lt;li&gt;Tempo para responder dúvidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Se você gostar do conteúdo e puder contribuir financeiramente de alguma forma, por favor, use as informações abaixo ou entre em contato no meu email. Isso é de grande valia e incentivo para dar-mos continuidades da contribuição de conteúdo e conhecimento.&lt;/p&gt;
+&lt;p&gt;Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para
+eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Segue o conteúdo da gravação:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/C84EJcrwEvg" allowfullscreen seamless frameBorder="0"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Quem tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;
+&lt;p&gt;Obrigado.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfSense"></category><category term="pf2ad"></category><category term="AD"></category></entry><entry><title>Hangout pf2ad no pfSense® 2.3</title><link href="http://luizgustavo.pro.br/blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/" rel="alternate"></link><updated>2016-04-22T19:32:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-04-22:blog/2016/04/22/hangout-pf2ad-no-pfsenser-23/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Olá,&lt;/p&gt;
 &lt;p&gt;Estou organizando a realização de um hangout sobre pf2ad:&lt;/p&gt;
@@ -47,7 +155,7 @@ endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança
 participantes é de 15 pessoas. Envie um email solicitando o convite
 que eu irei enviar instruções para participação.&lt;/p&gt;
 &lt;p&gt;Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Nr. banco: 001
+&lt;div class="codehilite"&gt;&lt;pre&gt;Nr. banco: 001
 Banco do Brasil
 AG: 4398-2
 C/C: 10613-5
@@ -117,24 +225,24 @@ massa de ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Se você quiser fazer transferencia bancaria, podera utilizar as contas abaixo:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;Nr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;banco&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mo"&gt;001&lt;/span&gt;
-&lt;span class="n"&gt;Banco&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="n"&gt;Brasil&lt;/span&gt;
-&lt;span class="nl"&gt;AG:&lt;/span&gt; &lt;span class="mi"&gt;4398&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;10613&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="n"&gt;Luiz&lt;/span&gt; &lt;span class="n"&gt;Gustavo&lt;/span&gt; &lt;span class="n"&gt;dos&lt;/span&gt; &lt;span class="n"&gt;Santos&lt;/span&gt; &lt;span class="n"&gt;Costa&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
 
-&lt;span class="nl"&gt;CPF:&lt;/span&gt; &lt;span class="mf"&gt;084.219.847&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;48&lt;/span&gt;
+CPF: 084.219.847-48
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para eu poder confirmar.&lt;/p&gt;
 &lt;p&gt;Quem não quiser fazer a participação ativa, poderá acompanhar em tempo real o Hangout através do Youtube, no dia do evento, uma hora antes, estarei divulgando o link para assistir.&lt;/p&gt;
 &lt;p&gt;O Hangout ficará disponivel no Youtube para visualização posterior&lt;/p&gt;
-&lt;p&gt;Se tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="Firewall"></category><category term="OPNsense"></category><category term="FreeBSD"></category><category term="Hangout"></category></entry><entry><title>Gravação Hangout Captive Portal</title><link href="http://luizgustavo.pro.br/blog/2013/10/13/gravacao-hangout-captive-portal/" rel="alternate"></link><updated>2013-10-13T09:52:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-10-13:blog/2013/10/13/gravacao-hangout-captive-portal/</id><summary type="html">&lt;hr /&gt;
-&lt;p&gt;&lt;p align="center"&gt;
+&lt;p&gt;Se tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="Firewall"></category><category term="OPNsense"></category><category term="FreeBSD"></category><category term="Hangout"></category></entry><entry><title>Gravação Hangout Captive Portal</title><link href="http://luizgustavo.pro.br/blog/2013/10/13/gravacao-hangout-captive-portal/" rel="alternate"></link><updated>2013-10-13T09:52:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2013-10-13:blog/2013/10/13/gravacao-hangout-captive-portal/</id><summary type="html">&lt;p align="center"&gt;
     &lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;
 &lt;/p&gt;
-Segue abaixo a gravação do Hangout Tutorial sobre Captive Portal no Pfsense.&lt;/p&gt;
+
+&lt;p&gt;Segue abaixo a gravação do Hangout Tutorial sobre Captive Portal no Pfsense.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/mav4PfjdBdk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Qualquer dúvida, só colocar no comentário abaixo.&lt;/p&gt;
