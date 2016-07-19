@@ -12,7 +12,11 @@ ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 MD_EXTENSIONS = ['codehilite','extra']
-PLUGINS = ['pelican_youtube']
+PLUGINS = [
+    # ...
+    'pelican_youtube',
+    # ...
+]
 PATH = 'content'
 THEME = 'themes/pelican-bootstrap3'
 GOOGLE_ANALYTICS = 'UA-42026281-1'
