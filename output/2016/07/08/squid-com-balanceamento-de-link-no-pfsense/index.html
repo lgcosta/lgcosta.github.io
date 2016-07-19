@@ -10,26 +10,33 @@
 
 
 
-<link rel="canonical" href="../pages/squid-com-balanceamento-de-link-no-pfsense.html">
+<link rel="canonical" href="../../../../2016/07/08/squid-com-balanceamento-de-link-no-pfsense/">
 
         <meta name="author" content="Luiz Gustavo Costa" />
+        <meta name="keywords" content="hangout,pfSense,Squid" />
         <meta name="description" content="Apresentamos conteudo para programação de um Hangout sobre a implementação do Squid em um ambiente de balanceamento de link. Conteúdo de demanda grande para tirar duvidas na implementação de um ambiente de proxy complexo no pfSense®." />
 
-    <meta property="og:site_name" content="Blog GugaBSD" />
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Squid com balanceamento de link no pfSense"/>
-    <meta property="og:url" content="../pages/squid-com-balanceamento-de-link-no-pfsense.html"/>
-    <meta property="og:description" content="Apresentamos conteudo para programação de um Hangout sobre a implementação do Squid em um ambiente de balanceamento de link. Conteúdo de demanda grande para tirar duvidas na implementação de um ambiente de proxy complexo no pfSense®." />
+        <meta property="og:site_name" content="Blog GugaBSD" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Squid com balanceamento de link no pfSense"/>
+        <meta property="og:url" content="../../../../2016/07/08/squid-com-balanceamento-de-link-no-pfsense/"/>
+        <meta property="og:description" content="Apresentamos conteudo para programação de um Hangout sobre a implementação do Squid em um ambiente de balanceamento de link. Conteúdo de demanda grande para tirar duvidas na implementação de um ambiente de proxy complexo no pfSense®."/>
+        <meta property="article:published_time" content="2016-07-08" />
+            <meta property="article:section" content="Hangout" />
+            <meta property="article:tag" content="hangout" />
+            <meta property="article:tag" content="pfSense" />
+            <meta property="article:tag" content="Squid" />
+            <meta property="article:author" content="Luiz Gustavo Costa" />
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
-    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../theme/css/bootstrap.sandstone.min.css" type="text/css"/>
+    <link href="../../../../theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
-    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+    <link href="../../../../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../theme/css/style.css" type="text/css"/>
 
-        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="../../../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Blog GugaBSD ATOM Feed"/>
 
 </head>
@@ -44,35 +51,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="../" class="navbar-brand">
+            <a href="../../../../" class="navbar-brand">
 Blog GugaBSD            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li class="active"><a href="../pages/squid-com-balanceamento-de-link-no-pfsense.html">
-                             Squid com balanceamento de link no pfSense
-                          </a></li>
-                         <li><a href="../pages/contato.html">
+                         <li><a href="../../../../pages/contato.html">
                              Contato
                           </a></li>
-                         <li><a href="../pages/curriculum.html">
+                         <li><a href="../../../../pages/curriculum.html">
                              Curriculum
                           </a></li>
                         <li >
-                            <a href="../category/gerenciamento.html">Gerenciamento</a>
+                            <a href="../../../../category/gerenciamento.html">Gerenciamento</a>
+                        </li>
+                        <li class="active">
+                            <a href="../../../../category/hangout.html">Hangout</a>
                         </li>
                         <li >
-                            <a href="../category/hangout.html">Hangout</a>
+                            <a href="../../../../category/lancamento.html">Lançamento</a>
                         </li>
                         <li >
-                            <a href="../category/lancamento.html">Lançamento</a>
-                        </li>
-                        <li >
-                            <a href="../category/monitoramento.html">Monitoramento</a>
+                            <a href="../../../../category/monitoramento.html">Monitoramento</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="../../../../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -84,11 +88,38 @@ Blog GugaBSD            </a>
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="content" class="body">
-        <h1 class="entry-title">Squid com balanceamento de link no pfSense</h1>
-        
-        <div class="entry-content">
-            <p align="center"><img src="/blog/images/blog/squid-balancer.png" /></p>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../../../../2016/07/08/squid-com-balanceamento-de-link-no-pfsense/"
+                       rel="bookmark"
+                       title="Permalink to Squid com balanceamento de link no pfSense">
+                        Squid com balanceamento de link no pfSense
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-07-08T10:30:00-03:00"> Sex 08 julho 2016</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="../../../../tag/hangout.html">hangout</a>
+        /
+	<a href="../../../../tag/pfsense.html">pfSense</a>
+        /
+	<a href="../../../../tag/squid.html">Squid</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p align="center"><img src="/blog/images/blog/squid-balancer.png" /></p>
 
 <p>Olá,</p>
 <p>Estou organizando a realização de um hangout sobre:</p>
@@ -156,8 +187,34 @@ real o Hangout através do Youtube, no dia do evento, uma hora antes,
 estarei divulgando o link para assistir.</p>
 <p>O Hangout ficará disponivel no Youtube para visualização posterior</p>
 <p>e tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.</p>
-        </div>
+            </div>
+            <!-- /.entry-content -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'gugabsd'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
     </section>
+        </article>
+    </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -173,7 +230,7 @@ estarei divulgando o link para assistir.</p>
 
 
 
-            <li class="list-group-item"><a href="../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="../../../../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                 </ul>
             </li>
@@ -214,13 +271,13 @@ estarei divulgando o link para assistir.</p>
       </div>
    </div>
 </footer>
-<script src="../theme/js/jquery.min.js"></script>
+<script src="../../../../theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../theme/js/bootstrap.min.js"></script>
+<script src="../../../../theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="../theme/js/respond.min.js"></script>
+<script src="../../../../theme/js/respond.min.js"></script>
 
     <!-- Disqus -->
     <script type="text/javascript">

@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/hangout.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-05-10T12:18:00-03:00</updated><entry><title>Abordando conceitos de filtragem de proxy</title><link href="http://luizgustavo.pro.br/blog/2016/05/10/abordando-conceitos-de-filtragem-de-proxy/" rel="alternate"></link><updated>2016-05-10T12:18:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-05-10:blog/2016/05/10/abordando-conceitos-de-filtragem-de-proxy/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/hangout.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-07-08T10:30:00-03:00</updated><entry><title>Squid com balanceamento de link no pfSense</title><link href="http://luizgustavo.pro.br/blog/2016/07/08/squid-com-balanceamento-de-link-no-pfsense/" rel="alternate"></link><updated>2016-07-08T10:30:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-07-08:blog/2016/07/08/squid-com-balanceamento-de-link-no-pfsense/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/squid-balancer.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Olá,&lt;/p&gt;
+&lt;p&gt;Estou organizando a realização de um hangout sobre:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Squid em um ambiente com balanceamento de link no pFsense®&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;O Hangout será realizado em:
+Data: 14/07/2016 as 21:00 hrs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sobre o que vamos falar então no Hangout ?&lt;/p&gt;
+&lt;p&gt;Será 1 hora de interatividade através da ferramenta da Google, abordando
+os seguintes itens:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Um pouco de conceito&lt;/li&gt;
+&lt;li&gt;Preparação do ambiente&lt;/li&gt;
+&lt;li&gt;Configuração dos links de balanceamento&lt;/li&gt;
+&lt;li&gt;Configuração de Regras&lt;/li&gt;
+&lt;li&gt;Configuração do Squid&lt;/li&gt;
+&lt;li&gt;Testes de ambiente (Transparente e autenticado)&lt;/li&gt;
+&lt;li&gt;Perguntas e dúvidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quanto a contribuição financeira deste, estou adotando um modelo
+diferente, na qual de forma voluntario, haja uma pré-inscrição para
+participação ativa no Hangout. Contribuição essa que visa arcar com o
+tempo dedicado aos tutoriais e projetos. Mas como falei, de forma
+voluntaria, eu peço uma contribuição de R$ 50,00 para a participação.&lt;/p&gt;
+&lt;p&gt;Se mesmo assim você quiser participar e não puder contribuir, manda um
+email que a gente da um jeito !&lt;/p&gt;
+&lt;p&gt;Então vamos lá !&lt;/p&gt;
+&lt;p&gt;Para participar deste Hangout, o minimo necessário do usuário é ter
+noção básica de utilização de interfaces de gerenciamento web, assim
+como estar familiarizado com ambiente de firewall.&lt;/p&gt;
+&lt;p&gt;Iremos trabalhar já com a versão a última versão disponível para o dia
+do Hangout (pfSense 2.3.1) e iremos implementar uma mão na massa de
+ambientes propostos pelo os participantes do Hangout.&lt;/p&gt;
+&lt;p&gt;Semelhantes aos outros Hangouts, as pessoas que querem participar
+ativamente do Hangout com perguntas, devem enviar um email para mim no
+endereço luizgustavo@luizgustavo.pro.br estarei fazendo uma cobrança
+(voluntaria) de R$ 50,00 para a participação, o limite de
+participantes é de 10 pessoas. Envie um email solicitando o convite
+que eu irei enviar instruções para participação.&lt;/p&gt;
+&lt;p&gt;Se você quiser fazer transferência bancaria, poderá utilizar as contas abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Valor: R$ 50,00 Quem depositar, me envie comprovante (ou numero) para
+eu poder confirmar.&lt;/p&gt;
+&lt;p&gt;Para a opção de Paypal, eu criei um botão para adquirir a inscrição para participação ativa:&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"&gt;
+&lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+&lt;input type="hidden" name="hosted_button_id" value="A2UUK9YZLAVW6"&gt;
+&lt;input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!"&gt;
+&lt;img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1"&gt;
+&lt;/form&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quem não quiser fazer a participação ativa, poderá acompanhar em tempo
+real o Hangout através do Youtube, no dia do evento, uma hora antes,
+estarei divulgando o link para assistir.&lt;/p&gt;
+&lt;p&gt;O Hangout ficará disponivel no Youtube para visualização posterior&lt;/p&gt;
+&lt;p&gt;e tiver dúvidas, envie-as por email para meu endereço ou poste um comentário abaixo.&lt;/p&gt;</summary><category term="hangout"></category><category term="pfSense"></category><category term="Squid"></category></entry><entry><title>Abordando conceitos de filtragem de proxy</title><link href="http://luizgustavo.pro.br/blog/2016/05/10/abordando-conceitos-de-filtragem-de-proxy/" rel="alternate"></link><updated>2016-05-10T12:18:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-05-10:blog/2016/05/10/abordando-conceitos-de-filtragem-de-proxy/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/hangout_pfsense.png"png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Olá,&lt;/p&gt;
 &lt;p&gt;Estou organizando a realização de um hangout sobre:&lt;/p&gt;
