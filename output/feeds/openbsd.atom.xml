@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/openbsd.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-08-01T16:37:00-03:00</updated><entry><title>Instalando OpenBSD em um cloud Linux</title><link href="http://luizgustavo.pro.br/blog/2016/08/01/instalando-openbsd-em-um-cloud-linux/" rel="alternate"></link><updated>2016-08-01T16:37:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-08-01:blog/2016/08/01/instalando-openbsd-em-um-cloud-linux/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/Carp.gif" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tutorial de instalação do OpenBSD 5.9 em um cloud com Linux&lt;/p&gt;
+&lt;p&gt;É muito simples, basta ter instalado no cloud um Linux com grub2 e você também precisa ter acesso ao terminal dele, ao menos para gerenciar o boot da VM/Cloud. Com isso, vamos fazer o grub carregar na memória uma imagem do OpenBSD na RAM do cloud, de forma que podemos ter o disco disponivel para formatação, a instalação dos binarios é pela rede.&lt;/p&gt;
+&lt;p&gt;Vamos ao exemplo pratico, o que temos?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Um cloud na CloudAtCost [1]&lt;/li&gt;
+&lt;li&gt;Instalação do Ubuntu 14.4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Faça a instalação do cloud com ubuntu (ou outro linux com grub2), feita a instalação, veja se ele configurou alguma partição sem lvm (normalmente o /boot, como no exemplo abaixo)&lt;/p&gt;
+&lt;p&gt;Faça o download do arquivo bsd.rd no repositorio do OpenBSD e mova para a raiz de montagem da partição sem lvm:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;wget http://ftp.openbsd.org/pub/OpenBSD/5.9/amd64/bsd.rd
+mv bsd.rd /boot/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Feito isso, adicione a entrada abaixo no arquivo /etc/grub.d/40_custom&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;menuentry &lt;span class="s2"&gt;&amp;quot;Install OpenBSD from RAM disk&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+ &lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;root&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;hd0,1&lt;span class="o"&gt;)&lt;/span&gt;
+ kopenbsd /bsd.rd
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;É recomendavel também que você aumente o tempo de timeout do grub no arquivo /etc/default/grub para que você possa escolher a opção de carregar o openbsd na memoria.&lt;/p&gt;
+&lt;p&gt;Agora, gere uma nova configuração do grub com o comando abaixo:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;update-grub
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Reinicie o cloud&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;reboot
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;E pronto !! na hora do boot, no menu do grub, escolha a opção "Install OpenBSD" e faça a instalação dele !&lt;/p&gt;
+&lt;p&gt;[1] http://www.cloudatcost.com/&lt;/p&gt;
+&lt;p&gt;Fonte essencial para isso: http://openbsd-archive.7691.n7.nabble.com/how-to-install-OpenBSD-in-a-computer-with-Linux-and-Grub2-td41148.html&lt;/p&gt;
+&lt;p&gt;Qualquer dúvida, só postar ai nos comentários.&lt;/p&gt;
+&lt;p&gt;Abraços&lt;/p&gt;</summary><category term="OpenBSD"></category><category term="BSD"></category><category term="Cloud"></category><category term="Linux"></category><category term="Install"></category></entry></feed>
