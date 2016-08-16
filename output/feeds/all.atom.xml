@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/all.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-08-01T16:37:00-03:00</updated><entry><title>Instalando OpenBSD em um cloud Linux</title><link href="http://luizgustavo.pro.br/blog/2016/08/01/instalando-openbsd-em-um-cloud-linux/" rel="alternate"></link><updated>2016-08-01T16:37:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-08-01:blog/2016/08/01/instalando-openbsd-em-um-cloud-linux/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/Carp.gif" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog GugaBSD</title><link href="http://luizgustavo.pro.br/blog/" rel="alternate"></link><link href="http://luizgustavo.pro.br/blog/feeds/all.atom.xml" rel="self"></link><id>http://luizgustavo.pro.br/blog/</id><updated>2016-08-16T11:50:00-03:00</updated><entry><title>Crowdfunding para implementar OAuth no CP do pfSense</title><link href="http://luizgustavo.pro.br/blog/2016/08/16/crowdfunding-para-implementar-oauth-no-cp-do-pfsense/" rel="alternate"></link><updated>2016-08-16T11:50:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-08-16:blog/2016/08/16/crowdfunding-para-implementar-oauth-no-cp-do-pfsense/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/mutual-funds.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Crowdfunding para implementar OAuth no CP do pfSense&lt;/p&gt;
+&lt;p&gt;A ideia é fazer um post de arrecadação para financiar horas de desenvolvimento de implantação de mecanismo de autenticação OAuth no Captive Portal do pfSense nas versões de demanda (via comentários no final da página), levando em conta a ultima versão 2.3.2.&lt;/p&gt;
+&lt;p&gt;A autenticação via OAuth vai permitir a integração com vários portais de integração de login, como:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Facebook&lt;/li&gt;
+&lt;li&gt;Google (Gmail)&lt;/li&gt;
+&lt;li&gt;Github&lt;/li&gt;
+&lt;li&gt;Entre outros que usem o mecanismo OAuth&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O que vai ser desenvolvido?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Página de configuração para a integração OAuth dos portais&lt;/li&gt;
+&lt;li&gt;Página de login personalizavel.&lt;/li&gt;
+&lt;li&gt;Página de "Termos de uso"&lt;/li&gt;
+&lt;li&gt;Engine de integração do OAuth&lt;/li&gt;
+&lt;li&gt;Engine de relatorio de acesso&lt;/li&gt;
+&lt;li&gt;Integração do login com Proxy (??? demanda ???)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;A implementação do patch vai ser livre ?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Sim, a ideia do Crowdfunding é somente a de financiar as horas de trabalho envolvidas no código, testes, e suporte. Todo o código estará disponivel sob licença BSD (ou beerware [1] -- como preferir) e seus arquivos estarão versionados no Gitlab.&lt;/p&gt;
+&lt;p&gt;[1] https://pt.wikipedia.org/wiki/Beerware&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Porque não usar um portal de Crowdfunding ?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Porque eles tem um custo, ou melhor, uma comissão e toda uma burocracia para pagamentos, como se trata de uma implementação que não é muito grande, não vejo porque não faze-lo diretamente.&lt;/p&gt;
+&lt;p&gt;E estarei atualizando no final desse post uma lista dos contribuidores do Crowdfunding.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Como faço para fazer a contribuição ?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Você tem duas opções:&lt;/p&gt;
+&lt;p&gt;Paypal:&lt;/p&gt;
+&lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"&gt;
+    &lt;input name="cmd" value="_s-xclick" type="hidden"&gt;
+    &lt;input name="hosted_button_id" value="9Q729XTN5PJ2S" type="hidden"&gt;
+    &lt;input src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!" type="image" border="0"&gt;
+    &lt;img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" height="1" width="1" border="0"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;Via transferencia bancaria:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;Nr. banco: 001
+Banco do Brasil
+AG: 4398-2
+C/C: 10613-5
+Luiz Gustavo dos Santos Costa
+CPF: 084.219.847-48
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Qualquer dúvida, deixe mensagem nos comentários aqui no final do post.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Contribuidores:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;lista_de_contribuidores&lt;/p&gt;</summary><category term="FreeBSD"></category><category term="pfSense"></category><category term="Crowdfunding"></category></entry><entry><title>Instalando OpenBSD em um cloud Linux</title><link href="http://luizgustavo.pro.br/blog/2016/08/01/instalando-openbsd-em-um-cloud-linux/" rel="alternate"></link><updated>2016-08-01T16:37:00-03:00</updated><author><name>Luiz Gustavo Costa</name></author><id>tag:luizgustavo.pro.br,2016-08-01:blog/2016/08/01/instalando-openbsd-em-um-cloud-linux/</id><summary type="html">&lt;p align="center"&gt;&lt;img src="/blog/images/blog/Carp.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tutorial de instalação do OpenBSD 5.9 em um cloud com Linux&lt;/p&gt;
 &lt;p&gt;É muito simples, basta ter instalado no cloud um Linux com grub2 e você também precisa ter acesso ao terminal dele, ao menos para gerenciar o boot da VM/Cloud. Com isso, vamos fazer o grub carregar na memória uma imagem do OpenBSD na RAM do cloud, de forma que podemos ter o disco disponivel para formatação, a instalação dos binarios é pela rede.&lt;/p&gt;
